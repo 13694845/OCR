@@ -31,16 +31,115 @@
     self.grayImageView.image = grayImage;
     // [self logPixelsOfImage:grayImage];
     
-    UIImage *bwImage = [self bwImage:image];
+    UIImage *bwImage = [self bwImage:grayImage];
     self.bwImageView.image = bwImage;
     // [self logPixelsOfImage:bwImage];
+    
+    [self shadowOfImage:bwImage];
+}
+
+// Smoothing image:
+
+- (char)recognizeSlice:(UIImage *)slice {
+    return 'a';
+}
+
+- (NSArray *)sliceImage:(UIImage *)image {
+    return nil;
+}
+
+- (void)shadowOfImage:(UIImage *)image {
+    CGImageRef inputCGImage = [image CGImage];
+    NSUInteger width = CGImageGetWidth(inputCGImage);
+    NSUInteger height = CGImageGetHeight(inputCGImage);
+    
+    NSUInteger bytesPerPixel = 4;
+    NSUInteger bytesPerRow = bytesPerPixel * width;
+    NSUInteger bitsPerComponent = 8;
+    
+    UInt32 *pixels;
+    pixels = (UInt32 *)calloc(width * height, sizeof(UInt32));
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGContextRef context = CGBitmapContextCreate(pixels, width, height,
+                                                 bitsPerComponent, bytesPerRow, colorSpace,
+                                                 kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+    
+    CGContextDrawImage(context, CGRectMake(0, 0, width, height), inputCGImage);
+    
+    CGColorSpaceRelease(colorSpace);
+    CGContextRelease(context);
+    
+    #define Mask8(x) ( (x) & 0xFF )
+    #define R(x) ( Mask8(x) )
+    #define G(x) ( Mask8(x >> 8 ) )
+    #define B(x) ( Mask8(x >> 16) )
+    
+    NSUInteger xShadow[width], yShadow[height];
+    memset(xShadow, 0, width * sizeof(NSUInteger));
+    memset(yShadow, 0, height * sizeof(NSUInteger));
+    
+    UInt32 *currentPixel = pixels;
+    for (NSUInteger j = 0; j < height; j++) {
+        for (NSUInteger i = 0; i < width; i++) {
+            UInt32 color = *currentPixel;
+            
+            UInt32 averageColor = (R(color) + G(color) + B(color)) / 3.0;
+            // printf("%3.0f ", (float)averageColor);
+            
+            if (averageColor == 0) {
+                xShadow[i]++;
+                yShadow[j]++;
+            }
+            if (averageColor == 255) {
+            }
+            currentPixel++;
+        }
+    }
+    free(pixels);
+    
+    for (NSUInteger i = 0; i < width; i++) {
+        // printf("%d ", xShadow[i]);
+    }
+    printf("\n");
+    for (NSUInteger j = 0; j < height; j++) {
+        // printf("%d ", yShadow[j]);
+    }
+    
+    int flag = 0;
+    for (NSUInteger j = 0; j < height; j++) {
+        if (yShadow[j] == 0 && flag == 1) {
+            printf("|| ");
+            flag = 0;
+        }
+        if (yShadow[j] != 0 && flag == 0) {
+            printf("|| ");
+            flag = 1;
+        }
+        printf("%d ", yShadow[j]);
+    }
+    
+    printf("\n\n");
+    for (NSUInteger i = 0; i < width; i++) {
+        
+        if (xShadow[i] == 0 && flag == 1) {
+            printf("|| ");
+            flag = 0;
+        }
+        
+        if (xShadow[i] != 0 && flag == 0) {
+            printf("|| ");
+            flag = 1;
+        }
+        
+        printf("%d ", xShadow[i]);
+    }
 }
 
 
 
-
 - (UIImage *)bwImage:(UIImage *)image {
-    UInt32 * inputPixels;
+    UInt32 *inputPixels;
     
     CGImageRef inputCGImage = [image CGImage];
     NSUInteger inputWidth = CGImageGetWidth(inputCGImage);
@@ -74,7 +173,7 @@
             UInt32 color = *currentPixel;
             
             UInt32 averageColor = (R(color) + G(color) + B(color)) / 3.0;
-            printf("%3.0f ", (float)averageColor);
+            // printf("%3.0f ", (float)averageColor);
             
             if (averageColor < 120) averageColor = 0;
             if (averageColor > 120) averageColor = 255;

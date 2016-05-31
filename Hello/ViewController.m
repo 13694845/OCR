@@ -121,7 +121,6 @@
     
     printf("\n\n");
     for (NSUInteger i = 0; i < width; i++) {
-        
         if (xShadow[i] == 0 && flag == 1) {
             printf("|| ");
             flag = 0;
@@ -131,12 +130,9 @@
             printf("|| ");
             flag = 1;
         }
-        
         printf("%d ", xShadow[i]);
     }
 }
-
-
 
 - (UIImage *)bwImage:(UIImage *)image {
     UInt32 *inputPixels;

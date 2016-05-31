@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		6C5405561CF57888005CCD66 /* vin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vin.png; sourceTree = "<group>"; };
-		6C54058D1CFD3751005CCD66 /* CImg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CImg.h; sourceTree = "<group>"; };
+		6C5405951CFD6B08005CCD66 /* CImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CImg.h; sourceTree = "<group>"; };
 		6CFCEA101CF54D9D00CC08A7 /* Hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFCEA141CF54D9D00CC08A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CFCEA161CF54D9D00CC08A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		6CFCEA121CF54D9D00CC08A7 /* Hello */ = {
 			isa = PBXGroup;
 			children = (
-				6C54058D1CFD3751005CCD66 /* CImg.h */,
+				6C5405951CFD6B08005CCD66 /* CImg.h */,
 				6C5405561CF57888005CCD66 /* vin.png */,
 				6CFCEA161CF54D9D00CC08A7 /* AppDelegate.h */,
 				6CFCEA171CF54D9D00CC08A7 /* AppDelegate.m */,

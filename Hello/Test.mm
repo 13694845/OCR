@@ -8,8 +8,6 @@
 
 #import "Test.h"
 #include "pHash.h"
-// #include "Magick++.h"
-// #include "MagickCore/MagickCore.h"
 #include "jpeglib.h"
 
 
@@ -25,7 +23,7 @@ struct ph_imagepoint{
 - (void)hashImage {
     NSLog(@"\n\n hello hashing Image");
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"circle.png" ofType:nil];    // f1.jpg
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"font.jpg" ofType:nil];    // f1.jpg
     
     NSLog(@"\n\n path : %@", path);
     
@@ -42,7 +40,7 @@ struct ph_imagepoint{
     
     
     
-    NSString *path2 = [[NSBundle mainBundle] pathForResource:@"square.png" ofType:nil];   // m0.jpg
+    NSString *path2 = [[NSBundle mainBundle] pathForResource:@"slice.jpg" ofType:nil];   // m0.jpg
     
     NSLog(@"\n\n path2 : %@", path2);
     

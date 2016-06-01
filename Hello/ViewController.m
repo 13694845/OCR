@@ -106,11 +106,11 @@
     int flag = 0;
     for (NSUInteger j = 0; j < height; j++) {
         if (yShadow[j] == 0 && flag == 1) {
-            printf("|| ");
+            printf(" > ");
             flag = 0;
         }
         if (yShadow[j] != 0 && flag == 0) {
-            printf("|| ");
+            printf(" < ");
             flag = 1;
         }
         printf("%d ", yShadow[j]);
@@ -119,12 +119,12 @@
     printf("\n\n");
     for (NSUInteger i = 0; i < width; i++) {
         if (xShadow[i] == 0 && flag == 1) {
-            printf("|| ");
+            printf(" > ");
             flag = 0;
         }
         
         if (xShadow[i] != 0 && flag == 0) {
-            printf("|| ");
+            printf(" < ");
             flag = 1;
         }
         printf("%d ", xShadow[i]);

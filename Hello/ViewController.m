@@ -23,8 +23,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     UIImage *image = [UIImage imageNamed:@"vin"];
-    // UIImage *image = [UIImage imageNamed:@"ghost_tiny"];
-    // UIImage *image = [UIImage imageNamed:@"f1.jpg"];
     self.imageView.image = image;
     // [self logPixelsOfImage:image];
     

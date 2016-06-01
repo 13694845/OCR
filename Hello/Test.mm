@@ -10,4 +10,8 @@
 
 @implementation Test
 
+- (void)hashImage {
+    NSLog(@"hello hash Image");
+}
+
 @end

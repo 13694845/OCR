@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "CImg.h"
+#include "pHash.h"
 
 @interface Test : NSObject
+
+- (void)hashImage;
 
 @end

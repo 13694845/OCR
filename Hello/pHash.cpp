@@ -983,7 +983,7 @@ TxtHashPoint* ph_texthash(const char *filename,int *nbpoints){
     }
     struct stat fileinfo;
     fstat(fileno(pfile),&fileinfo);
-    count = fileinfo.st_size - WindowLength + 1;
+    count = (int)fileinfo.st_size - WindowLength + 1;
     count = (int)(0.01*count);
     int d;
     ulong64 hashword = 0ULL;

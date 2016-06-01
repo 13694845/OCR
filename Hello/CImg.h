@@ -4216,7 +4216,12 @@ namespace cimg_library_suffixed {
         char *const ncommand = new char[l + 16];
         std::strncpy(ncommand,command,l);
         std::strcpy(ncommand + l," 2> /dev/null"); // Make command silent.
-        const int out_val = std::system(ncommand);
+          
+          // ********************************
+          // const int out_val = std::system(ncommand);
+          const int out_val = 1;
+          // ********************************
+          
         delete[] ncommand;
         return out_val;
       } else return -1;

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Test.h"
 
 @interface ViewController ()
 
@@ -36,6 +37,9 @@
     // [self logPixelsOfImage:bwImage];
     
     [self shadowOfImage:bwImage];
+    
+    Test *test = [[Test alloc] init];
+    [test hashImage];
 }
 
 // Smoothing image:

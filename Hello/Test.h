@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "pHash.h"
 
 @interface Test : NSObject
 

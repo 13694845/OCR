@@ -11,5 +11,6 @@
 @interface Test : NSObject
 
 - (void)hashImage;
+- (void)hashImageAgain;
 
 @end

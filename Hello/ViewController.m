@@ -40,6 +40,8 @@
     
     Test *test = [[Test alloc] init];
     [test hashImage];
+    NSLog(@"\n\n");
+    [test hashImageAgain];
 }
 
 // Smoothing image:

@@ -8,7 +8,8 @@
 
 #import "Test.h"
 #include "pHash.h"
-#include "Magick++.h"
+//#include "Magick++.h"
+#include "MagickCore/MagickCore.h"
 
 
 @implementation Test

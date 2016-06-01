@@ -10,6 +10,6 @@
 
 @interface Test : NSObject
 
-- (void)hashImage;
+- (int)similarityOfImage:(NSString *)imageA andImage:(NSString *)imageB;
 
 @end

@@ -37,7 +37,8 @@
     [self shadowOfImage:bwImage];
     
     Test *test = [[Test alloc] init];
-    [test hashImage];
+    [test similarityOfImage:[[NSBundle mainBundle] pathForResource:@"font.jpg" ofType:nil]
+                   andImage:[[NSBundle mainBundle] pathForResource:@"slice.jpg" ofType:nil]];
 }
 
 - (NSArray *)sliceImage:(UIImage *)image {

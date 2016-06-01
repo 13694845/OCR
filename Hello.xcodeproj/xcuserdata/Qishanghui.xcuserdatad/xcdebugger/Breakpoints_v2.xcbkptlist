@@ -6,15 +6,29 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hello/CImg.h"
+            timestampString = "486440484.415801"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47267"
+            endingLineNumber = "47267">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Hello/CImg.h"
-            timestampString = "486436214.860338"
+            timestampString = "486440484.415801"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47257"
-            endingLineNumber = "47257">
+            startingLineNumber = "44230"
+            endingLineNumber = "44230">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -24,58 +38,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Hello/CImg.h"
-            timestampString = "486437209.147259"
+            timestampString = "486440484.415801"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "467"
-            endingLineNumber = "467">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "void cimg_library::cimg::unused&lt;bool&gt;(bool const&amp;, ...)"
-                  moduleName = "Hello"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Qishanghui/Desktop/Hello/Hello/CImg.h"
-                  timestampString = "486437209.152139"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "2198"
-                  endingLineNumber = "2198"
-                  offsetFromSymbolStart = "10">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "void cimg_library::cimg::unused&lt;char const*&gt;(char const* const&amp;, ...)"
-                  moduleName = "Hello"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Qishanghui/Desktop/Hello/Hello/CImg.h"
-                  timestampString = "486437209.15236"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "2198"
-                  endingLineNumber = "2198"
-                  offsetFromSymbolStart = "10">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "void cimg_library::cimg::unused&lt;float*&gt;(float* const&amp;, ...)"
-                  moduleName = "Hello"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Qishanghui/Desktop/Hello/Hello/CImg.h"
-                  timestampString = "486437209.152472"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "2198"
-                  endingLineNumber = "2198"
-                  offsetFromSymbolStart = "10">
-               </Location>
-            </Locations>
+            startingLineNumber = "44665"
+            endingLineNumber = "44665">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -11,7 +11,11 @@
 		6C5405A71CFD7375005CCD66 /* Test.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C5405A61CFD7375005CCD66 /* Test.mm */; };
 		6C5406041CFD8BDA005CCD66 /* pHash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C5406031CFD8BDA005CCD66 /* pHash.cpp */; };
 		6C5406071CFE5F9F005CCD66 /* test_imagephash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C5406061CFE5F9F005CCD66 /* test_imagephash.cpp */; };
-		6C5406091CFE64FB005CCD66 /* f.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406081CFE64FB005CCD66 /* f.jpg */; };
+		6C5406091CFE64FB005CCD66 /* f2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406081CFE64FB005CCD66 /* f2.jpg */; };
+		6C54069B1CFE7DFB005CCD66 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C54069A1CFE7DFB005CCD66 /* libjpeg.a */; };
+		6C5406A11CFE849F005CCD66 /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406A01CFE849F005CCD66 /* 02.jpg */; };
+		6C5406A31CFE8575005CCD66 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406A21CFE8575005CCD66 /* 01.jpg */; };
+		6C5406A51CFE87E7005CCD66 /* f1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406A41CFE87E7005CCD66 /* f1.jpg */; };
 		6CFCEA151CF54D9D00CC08A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA141CF54D9D00CC08A7 /* main.m */; };
 		6CFCEA181CF54D9D00CC08A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA171CF54D9D00CC08A7 /* AppDelegate.m */; };
 		6CFCEA1B1CF54D9D00CC08A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA1A1CF54D9D00CC08A7 /* ViewController.m */; };
@@ -30,7 +34,7 @@
 		6C5406031CFD8BDA005CCD66 /* pHash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pHash.cpp; sourceTree = "<group>"; };
 		6C5406051CFD8C3F005CCD66 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		6C5406061CFE5F9F005CCD66 /* test_imagephash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_imagephash.cpp; sourceTree = "<group>"; };
-		6C5406081CFE64FB005CCD66 /* f.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f.jpg; sourceTree = "<group>"; };
+		6C5406081CFE64FB005CCD66 /* f2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f2.jpg; sourceTree = "<group>"; };
 		6C54060C1CFE73FF005CCD66 /* Blob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blob.h; sourceTree = "<group>"; };
 		6C54060D1CFE73FF005CCD66 /* CoderInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoderInfo.h; sourceTree = "<group>"; };
 		6C54060E1CFE73FF005CCD66 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
@@ -166,6 +170,14 @@
 		6C5406921CFE73FF005CCD66 /* stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stream.h; sourceTree = "<group>"; };
 		6C5406931CFE73FF005CCD66 /* wand-view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "wand-view.h"; sourceTree = "<group>"; };
 		6C5406941CFE73FF005CCD66 /* wandcli.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wandcli.h; sourceTree = "<group>"; };
+		6C5406961CFE7CC0005CCD66 /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
+		6C5406971CFE7CC0005CCD66 /* jerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jerror.h; sourceTree = "<group>"; };
+		6C5406981CFE7CC0005CCD66 /* jmorecfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jmorecfg.h; sourceTree = "<group>"; };
+		6C5406991CFE7CC0005CCD66 /* jpeglib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeglib.h; sourceTree = "<group>"; };
+		6C54069A1CFE7DFB005CCD66 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		6C5406A01CFE849F005CCD66 /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
+		6C5406A21CFE8575005CCD66 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		6C5406A41CFE87E7005CCD66 /* f1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f1.jpg; sourceTree = "<group>"; };
 		6CFCEA101CF54D9D00CC08A7 /* Hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFCEA141CF54D9D00CC08A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CFCEA161CF54D9D00CC08A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -183,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C54069B1CFE7DFB005CCD66 /* libjpeg.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +368,17 @@
 			path = MagickWand;
 			sourceTree = "<group>";
 		};
+		6C5406951CFE7CC0005CCD66 /* jpeg */ = {
+			isa = PBXGroup;
+			children = (
+				6C5406961CFE7CC0005CCD66 /* jconfig.h */,
+				6C5406971CFE7CC0005CCD66 /* jerror.h */,
+				6C5406981CFE7CC0005CCD66 /* jmorecfg.h */,
+				6C5406991CFE7CC0005CCD66 /* jpeglib.h */,
+			);
+			path = jpeg;
+			sourceTree = "<group>";
+		};
 		6CFCEA071CF54D9D00CC08A7 = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +398,8 @@
 		6CFCEA121CF54D9D00CC08A7 /* Hello */ = {
 			isa = PBXGroup;
 			children = (
+				6C54069A1CFE7DFB005CCD66 /* libjpeg.a */,
+				6C5406951CFE7CC0005CCD66 /* jpeg */,
 				6C54060A1CFE73FF005CCD66 /* ImageMagick-7 */,
 				6C5406021CFD8B76005CCD66 /* pHash.h */,
 				6C5406031CFD8BDA005CCD66 /* pHash.cpp */,
@@ -385,7 +411,10 @@
 				6CFCEA191CF54D9D00CC08A7 /* ViewController.h */,
 				6CFCEA1A1CF54D9D00CC08A7 /* ViewController.m */,
 				6CFCEA1C1CF54D9D00CC08A7 /* Main.storyboard */,
-				6C5406081CFE64FB005CCD66 /* f.jpg */,
+				6C5406A21CFE8575005CCD66 /* 01.jpg */,
+				6C5406A01CFE849F005CCD66 /* 02.jpg */,
+				6C5406A41CFE87E7005CCD66 /* f1.jpg */,
+				6C5406081CFE64FB005CCD66 /* f2.jpg */,
 				6C5405561CF57888005CCD66 /* vin.png */,
 				6CFCEA1F1CF54D9D00CC08A7 /* Assets.xcassets */,
 				6CFCEA211CF54D9D00CC08A7 /* LaunchScreen.storyboard */,
@@ -463,11 +492,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C5406091CFE64FB005CCD66 /* f.jpg in Resources */,
+				6C5406091CFE64FB005CCD66 /* f2.jpg in Resources */,
 				6CFCEA231CF54D9D00CC08A7 /* LaunchScreen.storyboard in Resources */,
 				6CFCEA201CF54D9D00CC08A7 /* Assets.xcassets in Resources */,
 				6CFCEA1E1CF54D9D00CC08A7 /* Main.storyboard in Resources */,
+				6C5406A51CFE87E7005CCD66 /* f1.jpg in Resources */,
 				6C5405571CF57888005CCD66 /* vin.png in Resources */,
+				6C5406A11CFE849F005CCD66 /* 02.jpg in Resources */,
+				6C5406A31CFE8575005CCD66 /* 01.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +578,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Hello",
+					"$(SRCROOT)/Hello/ImageMagick-7",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -584,6 +620,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Hello",
+					"$(SRCROOT)/Hello/ImageMagick-7",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -598,6 +638,10 @@
 				INFOPLIST_FILE = Hello/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Hello",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.zen.Hello;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -610,6 +654,10 @@
 				INFOPLIST_FILE = Hello/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Hello",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.zen.Hello;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

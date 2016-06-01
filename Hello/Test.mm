@@ -25,7 +25,7 @@ struct ph_imagepoint{
 - (void)hashImage {
     NSLog(@"\n\n hello hashing Image");
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"01.jpg" ofType:nil];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"f1.jpg" ofType:nil];
     
     NSLog(@"\n\n path : %@", path);
     
@@ -42,7 +42,7 @@ struct ph_imagepoint{
     
     
     
-    NSString *path2 = [[NSBundle mainBundle] pathForResource:@"02.jpg" ofType:nil];
+    NSString *path2 = [[NSBundle mainBundle] pathForResource:@"m0.jpg" ofType:nil];
     
     NSLog(@"\n\n path2 : %@", path2);
     

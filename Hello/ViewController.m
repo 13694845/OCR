@@ -24,7 +24,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     UIImage *image = [UIImage imageNamed:@"vin"];
     // UIImage *image = [UIImage imageNamed:@"ghost_tiny"];
-    // UIImage *image = [UIImage imageNamed:@"green"];
+    // UIImage *image = [UIImage imageNamed:@"f1.jpg"];
     self.imageView.image = image;
     // [self logPixelsOfImage:image];
     
@@ -40,8 +40,8 @@
     
     Test *test = [[Test alloc] init];
     [test hashImage];
-    NSLog(@"\n\n");
-    [test hashImageAgain];
+  //  NSLog(@"\n\n");
+  //  [test hashImageAgain];
 }
 
 // Smoothing image:

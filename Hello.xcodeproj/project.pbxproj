@@ -16,6 +16,10 @@
 		6C5406A11CFE849F005CCD66 /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406A01CFE849F005CCD66 /* 02.jpg */; };
 		6C5406A31CFE8575005CCD66 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406A21CFE8575005CCD66 /* 01.jpg */; };
 		6C5406A51CFE87E7005CCD66 /* f1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406A41CFE87E7005CCD66 /* f1.jpg */; };
+		6C5406A71CFEA6CA005CCD66 /* 00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406A61CFEA6CA005CCD66 /* 00.jpg */; };
+		6C5406A91CFEA77E005CCD66 /* f0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406A81CFEA77E005CCD66 /* f0.jpg */; };
+		6C5406AC1CFEA8AC005CCD66 /* m0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406AA1CFEA8AC005CCD66 /* m0.jpg */; };
+		6C5406AD1CFEA8AC005CCD66 /* m1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406AB1CFEA8AC005CCD66 /* m1.jpg */; };
 		6CFCEA151CF54D9D00CC08A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA141CF54D9D00CC08A7 /* main.m */; };
 		6CFCEA181CF54D9D00CC08A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA171CF54D9D00CC08A7 /* AppDelegate.m */; };
 		6CFCEA1B1CF54D9D00CC08A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA1A1CF54D9D00CC08A7 /* ViewController.m */; };
@@ -178,6 +182,10 @@
 		6C5406A01CFE849F005CCD66 /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
 		6C5406A21CFE8575005CCD66 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
 		6C5406A41CFE87E7005CCD66 /* f1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f1.jpg; sourceTree = "<group>"; };
+		6C5406A61CFEA6CA005CCD66 /* 00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 00.jpg; sourceTree = "<group>"; };
+		6C5406A81CFEA77E005CCD66 /* f0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f0.jpg; sourceTree = "<group>"; };
+		6C5406AA1CFEA8AC005CCD66 /* m0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = m0.jpg; sourceTree = "<group>"; };
+		6C5406AB1CFEA8AC005CCD66 /* m1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = m1.jpg; sourceTree = "<group>"; };
 		6CFCEA101CF54D9D00CC08A7 /* Hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFCEA141CF54D9D00CC08A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CFCEA161CF54D9D00CC08A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -411,8 +419,12 @@
 				6CFCEA191CF54D9D00CC08A7 /* ViewController.h */,
 				6CFCEA1A1CF54D9D00CC08A7 /* ViewController.m */,
 				6CFCEA1C1CF54D9D00CC08A7 /* Main.storyboard */,
+				6C5406AA1CFEA8AC005CCD66 /* m0.jpg */,
+				6C5406AB1CFEA8AC005CCD66 /* m1.jpg */,
+				6C5406A61CFEA6CA005CCD66 /* 00.jpg */,
 				6C5406A21CFE8575005CCD66 /* 01.jpg */,
 				6C5406A01CFE849F005CCD66 /* 02.jpg */,
+				6C5406A81CFEA77E005CCD66 /* f0.jpg */,
 				6C5406A41CFE87E7005CCD66 /* f1.jpg */,
 				6C5406081CFE64FB005CCD66 /* f2.jpg */,
 				6C5405561CF57888005CCD66 /* vin.png */,
@@ -492,13 +504,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C5406A71CFEA6CA005CCD66 /* 00.jpg in Resources */,
 				6C5406091CFE64FB005CCD66 /* f2.jpg in Resources */,
 				6CFCEA231CF54D9D00CC08A7 /* LaunchScreen.storyboard in Resources */,
+				6C5406AD1CFEA8AC005CCD66 /* m1.jpg in Resources */,
 				6CFCEA201CF54D9D00CC08A7 /* Assets.xcassets in Resources */,
 				6CFCEA1E1CF54D9D00CC08A7 /* Main.storyboard in Resources */,
+				6C5406A91CFEA77E005CCD66 /* f0.jpg in Resources */,
 				6C5406A51CFE87E7005CCD66 /* f1.jpg in Resources */,
 				6C5405571CF57888005CCD66 /* vin.png in Resources */,
 				6C5406A11CFE849F005CCD66 /* 02.jpg in Resources */,
+				6C5406AC1CFEA8AC005CCD66 /* m0.jpg in Resources */,
 				6C5406A31CFE8575005CCD66 /* 01.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

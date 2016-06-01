@@ -8,13 +8,15 @@
 
 #import "Test.h"
 #include "pHash.h"
+#include "Magick++.h"
+
 
 @implementation Test
 
 - (void)hashImage {
     NSLog(@"\n\n hello hashing Image");
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"f" ofType:@"jpg"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"f.jpg" ofType:nil];
     
     NSLog(@"\n\n path : %@", path);
     

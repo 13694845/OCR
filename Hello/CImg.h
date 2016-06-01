@@ -396,9 +396,9 @@ extern "C" {
 // JPEG library may be used to get a native support of '.jpg' files.
 // (see methods 'CImg<T>::{load,save}_jpeg()').
 
-// *********************************
+// ********************************
 #define cimg_use_jpeg enable
-// *********************************
+// ********************************
 
 #ifdef cimg_use_jpeg
 extern "C" {

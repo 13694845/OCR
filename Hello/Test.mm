@@ -24,11 +24,9 @@
     distance = ph_hamming_distance(hash1, hash2);
     
     printf("\n\n");
-    printf("**************************\n");
     NSLog(@"hash a : %llu\n", hash1);
     NSLog(@"hash b : %llu\n", hash2);
-    NSLog(@"distance : %d", distance);
-    printf("**************************\n");
+    NSLog(@"distance : %d\n", distance);
     
     return distance;
 }

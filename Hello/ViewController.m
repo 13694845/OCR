@@ -41,9 +41,20 @@
                    andImage:[[NSBundle mainBundle] pathForResource:@"slice.jpg" ofType:nil]];
 }
 
-- (NSArray *)sliceImage:(UIImage *)image {
+
+
+- (void)axisOfImage:(UIImage *)image {
+}
+
+- (NSArray *)shadowsOfAxis:(NSArray *)axis {
     return nil;
 }
+
+- (NSArray *)sliceImage:(UIImage *)image alongAxis:(NSArray *)axis {
+    return nil;
+}
+
+
 
 - (void)shadowOfImage:(UIImage *)image {
     CGImageRef inputCGImage = [image CGImage];

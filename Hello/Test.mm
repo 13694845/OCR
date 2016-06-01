@@ -10,18 +10,15 @@
 #include "pHash.h"
 #include "jpeglib.h"
 
-
 //data structure for a hash and id
 struct ph_imagepoint{
     ulong64 hash;
     char *id;
 };
 
-
 @implementation Test
 
 - (void)hashImage {
-    NSLog(@"\n\n hello hashing Image");
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"font.jpg" ofType:nil];    // f1.jpg
     

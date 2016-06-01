@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6C5405A71CFD7375005CCD66 /* Test.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C5405A61CFD7375005CCD66 /* Test.mm */; };
-		6C5406041CFD8BDA005CCD66 /* pHash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C5406031CFD8BDA005CCD66 /* pHash.cpp */; };
 		6C5406C21CFEAE0C005CCD66 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C5406C11CFEAE0C005CCD66 /* libjpeg.a */; };
 		6C5406EA1CFEB50D005CCD66 /* vin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406E91CFEB50D005CCD66 /* vin.png */; };
 		6C5406F11CFEB5F1005CCD66 /* font.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406EF1CFEB5F1005CCD66 /* font.jpg */; };
 		6C5406F21CFEB5F1005CCD66 /* slice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406F01CFEB5F1005CCD66 /* slice.jpg */; };
+		6C5406F81CFEB8EA005CCD66 /* pHash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C5406F61CFEB8EA005CCD66 /* pHash.cpp */; };
 		6CFCEA151CF54D9D00CC08A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA141CF54D9D00CC08A7 /* main.m */; };
 		6CFCEA181CF54D9D00CC08A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA171CF54D9D00CC08A7 /* AppDelegate.m */; };
 		6CFCEA1B1CF54D9D00CC08A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA1A1CF54D9D00CC08A7 /* ViewController.m */; };
@@ -24,11 +24,6 @@
 /* Begin PBXFileReference section */
 		6C5405A51CFD7375005CCD66 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		6C5405A61CFD7375005CCD66 /* Test.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Test.mm; sourceTree = "<group>"; };
-		6C5405FA1CFD87A8005CCD66 /* CImg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CImg.h; sourceTree = "<group>"; };
-		6C5405FE1CFD88B2005CCD66 /* pHash-config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pHash-config.h"; sourceTree = "<group>"; };
-		6C5406021CFD8B76005CCD66 /* pHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pHash.h; sourceTree = "<group>"; };
-		6C5406031CFD8BDA005CCD66 /* pHash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pHash.cpp; sourceTree = "<group>"; };
-		6C5406051CFD8C3F005CCD66 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		6C5406BD1CFEAE0C005CCD66 /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
 		6C5406BE1CFEAE0C005CCD66 /* jerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jerror.h; sourceTree = "<group>"; };
 		6C5406BF1CFEAE0C005CCD66 /* jmorecfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jmorecfg.h; sourceTree = "<group>"; };
@@ -37,6 +32,11 @@
 		6C5406E91CFEB50D005CCD66 /* vin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vin.png; sourceTree = "<group>"; };
 		6C5406EF1CFEB5F1005CCD66 /* font.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font.jpg; sourceTree = "<group>"; };
 		6C5406F01CFEB5F1005CCD66 /* slice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slice.jpg; sourceTree = "<group>"; };
+		6C5406F41CFEB8EA005CCD66 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		6C5406F51CFEB8EA005CCD66 /* pHash-config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pHash-config.h"; sourceTree = "<group>"; };
+		6C5406F61CFEB8EA005CCD66 /* pHash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pHash.cpp; sourceTree = "<group>"; };
+		6C5406F71CFEB8EA005CCD66 /* pHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pHash.h; sourceTree = "<group>"; };
+		6C5406FA1CFEB8F0005CCD66 /* CImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CImg.h; sourceTree = "<group>"; };
 		6CFCEA101CF54D9D00CC08A7 /* Hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFCEA141CF54D9D00CC08A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CFCEA161CF54D9D00CC08A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +83,25 @@
 			path = image;
 			sourceTree = "<group>";
 		};
+		6C5406F31CFEB8EA005CCD66 /* pHash */ = {
+			isa = PBXGroup;
+			children = (
+				6C5406F41CFEB8EA005CCD66 /* config.h */,
+				6C5406F51CFEB8EA005CCD66 /* pHash-config.h */,
+				6C5406F61CFEB8EA005CCD66 /* pHash.cpp */,
+				6C5406F71CFEB8EA005CCD66 /* pHash.h */,
+			);
+			path = pHash;
+			sourceTree = "<group>";
+		};
+		6C5406F91CFEB8F0005CCD66 /* CImg */ = {
+			isa = PBXGroup;
+			children = (
+				6C5406FA1CFEB8F0005CCD66 /* CImg.h */,
+			);
+			path = CImg;
+			sourceTree = "<group>";
+		};
 		6CFCEA071CF54D9D00CC08A7 = {
 			isa = PBXGroup;
 			children = (
@@ -102,13 +121,10 @@
 		6CFCEA121CF54D9D00CC08A7 /* Hello */ = {
 			isa = PBXGroup;
 			children = (
-				6C5406E81CFEB50D005CCD66 /* image */,
+				6C5406F31CFEB8EA005CCD66 /* pHash */,
+				6C5406F91CFEB8F0005CCD66 /* CImg */,
 				6C5406BC1CFEAE0C005CCD66 /* jpeg */,
-				6C5406021CFD8B76005CCD66 /* pHash.h */,
-				6C5406031CFD8BDA005CCD66 /* pHash.cpp */,
-				6C5406051CFD8C3F005CCD66 /* config.h */,
-				6C5405FE1CFD88B2005CCD66 /* pHash-config.h */,
-				6C5405FA1CFD87A8005CCD66 /* CImg.h */,
+				6C5406E81CFEB50D005CCD66 /* image */,
 				6CFCEA161CF54D9D00CC08A7 /* AppDelegate.h */,
 				6CFCEA171CF54D9D00CC08A7 /* AppDelegate.m */,
 				6CFCEA191CF54D9D00CC08A7 /* ViewController.h */,
@@ -205,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C5406041CFD8BDA005CCD66 /* pHash.cpp in Sources */,
+				6C5406F81CFEB8EA005CCD66 /* pHash.cpp in Sources */,
 				6CFCEA1B1CF54D9D00CC08A7 /* ViewController.m in Sources */,
 				6C5405A71CFD7375005CCD66 /* Test.mm in Sources */,
 				6CFCEA181CF54D9D00CC08A7 /* AppDelegate.m in Sources */,

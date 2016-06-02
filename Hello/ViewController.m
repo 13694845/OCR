@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "Test.h"
 
-#import "Axis.h"
+#import "SRAxis.h"
 
 @interface ViewController ()
 
@@ -44,7 +44,7 @@
     
     
     UInt32 values[] = {1, 2, 3};
-    Axis *axis = [[Axis alloc] initWithValues:values count:3];
+    SRAxis *axis = [[SRAxis alloc] initWithValues:values count:3];
     NSLog(@"%d", axis.count);
 }
 

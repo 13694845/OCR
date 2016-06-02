@@ -1,20 +1,20 @@
 //
-//  Axis.m
+//  SRAxis.m
 //  Hello
 //
 //  Created by QSH on 16/6/2.
 //  Copyright © 2016年 Zen. All rights reserved.
 //
 
-#import "Axis.h"
+#import "SRAxis.h"
 
-@interface Axis ()
+@interface SRAxis ()
 
 @property (strong, nonatomic) NSMutableArray *values;
 
 @end
 
-@implementation Axis
+@implementation SRAxis
 
 - (instancetype)initWithValues:(const UInt32[])values count:(NSUInteger)count {
     self = [super init];

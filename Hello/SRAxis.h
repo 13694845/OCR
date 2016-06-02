@@ -1,5 +1,5 @@
 //
-//  Axis.h
+//  SRAxis.h
 //  Hello
 //
 //  Created by QSH on 16/6/2.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Axis : NSObject
+@interface SRAxis : NSObject
 
 - (instancetype)initWithValues:(const UInt32[])values count:(NSUInteger)count;
 - (NSUInteger)count;

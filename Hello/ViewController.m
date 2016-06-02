@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "Test.h"
 
+#import "Axis.h"
+
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -39,6 +41,11 @@
     Test *test = [[Test alloc] init];
     [test similarityOfImage:[[NSBundle mainBundle] pathForResource:@"font.jpg" ofType:nil]
                    andImage:[[NSBundle mainBundle] pathForResource:@"slice.jpg" ofType:nil]];
+    
+    
+    UInt32 values[] = {1, 2, 3};
+    Axis *axis = [[Axis alloc] initWithValues:values count:3];
+    NSLog(@"%d", axis.count);
 }
 
 

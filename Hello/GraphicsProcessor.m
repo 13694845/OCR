@@ -104,4 +104,12 @@
     return outputImage;
 }
 
+- (NSArray *)cutImage:(UIImage *)image rect:(CGRect)rect {
+    return nil;
+}
+
+- (NSArray *)sliceImage:(UIImage *)image {
+    return nil;
+}
+
 @end

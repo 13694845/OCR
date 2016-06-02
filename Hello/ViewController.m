@@ -34,9 +34,18 @@
     UIImage *grayImage = [[GraphicsProcessor sharedProcessor] grayImage:image];
     self.grayImageView.image = grayImage;
     
-    UIImage *binaryImage = [[GraphicsProcessor sharedProcessor] binaryImage:image];
+    UIImage *binaryImage = [[GraphicsProcessor sharedProcessor] binaryImage:grayImage];
     self.bwImageView.image = binaryImage;
-    [[GraphicsProcessor sharedProcessor] logImage:binaryImage];
+    // [[GraphicsProcessor sharedProcessor] logImage:binaryImage];
+    
+    NSArray *slices = [[GraphicsProcessor sharedProcessor] divideImage:binaryImage];
+    
+    /*
+    UIImage *sliceImage = [[GraphicsProcessor sharedProcessor] imageFromImage:binaryImage inRect:CGRectMake(0, 0, 100, 100)];
+    self.sliceImageView.backgroundColor = [UIColor lightGrayColor];
+    self.sliceImageView.image = sliceImage;
+    // [[GraphicsProcessor sharedProcessor] logImage:sliceImage];
+     */
 }
 
 

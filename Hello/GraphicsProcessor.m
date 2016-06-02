@@ -103,6 +103,86 @@
     return outputImage;
 }
 
+- (NSArray *)divideImage:(UIImage *)image {
+    CGImageRef inputCGImage = [image CGImage];
+    NSUInteger width = CGImageGetWidth(inputCGImage);
+    NSUInteger height = CGImageGetHeight(inputCGImage);
+    
+    UInt32 *pixels = (UInt32 *)calloc(height * width, sizeof(UInt32));
+    NSUInteger bytesPerPixel = 4;
+    NSUInteger bytesPerRow = bytesPerPixel * width;
+    NSUInteger bitsPerComponent = 8;
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGContextRef context = CGBitmapContextCreate(pixels, width, height, bitsPerComponent, bytesPerRow, colorSpace, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+    CGContextDrawImage(context, CGRectMake(0, 0, width, height), inputCGImage);
+    
+    NSUInteger shadow[width];
+    memset(shadow, 0, width * sizeof(NSUInteger));
+    for (NSUInteger j = 0; j < height; j++) {
+        for (NSUInteger i = 0; i < width; i++) {
+            UInt32 *currentPixel = pixels + (j * width) + i;
+            UInt32 color = *currentPixel;
+            UInt32 averageColor = (R(color) + G(color) + B(color)) / 3.0;
+            if (averageColor == 0) {
+                shadow[i]++;
+            }
+        }
+    }
+    
+    
+    int flag = 0;
+    for (NSUInteger i = 0; i < width; i++) {
+        if (shadow[i] == 0 && flag == 1) {
+            printf(" > ");
+            flag = 0;
+        }
+        if (shadow[i] != 0 && flag == 0) {
+            printf(" < ");
+            flag = 1;
+        }
+        printf("%d ", shadow[i]);
+    }
+    
+    
+    return nil;
+}
+
+- (UIImage *)trimImage:(UIImage *)image {
+    return nil;
+}
+
+
+
+/*
+
+- (NSArray *)rectsForSlicesWithImage:(UIImage *)image alongX {
+    
+}
+
+// edge
+
+
+
+
+- (NSArray *)rectsForSlice {
+    
+}
+
+
+- (NSArray *)slicesOfImage    OfSlice {
+    return nil;
+}
+
+
+
+- (NSArray *)rects    OfSlice {
+    return nil;
+}
+
+- (NSArray *)slicesFromImage:(UIImage *)image inRects:(NSArray *)rects {
+    return nil;
+}
+
 - (UIImage *)imageFromImage:(UIImage *)image inRect:(CGRect)rect {
     CGImageRef inputCGImage = [image CGImage];
     CGImageRef outputCGImage = CGImageCreateWithImageInRect(inputCGImage, rect);
@@ -110,5 +190,6 @@
     CGImageRelease(outputCGImage);
     return outputImage;
 }
+*/
 
 @end

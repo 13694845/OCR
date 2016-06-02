@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIImageView *grayImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *bwImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *sliceImageView;
 
 @end
 

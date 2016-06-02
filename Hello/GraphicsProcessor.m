@@ -66,7 +66,6 @@
     CGColorSpaceRelease(colorSpace);
     CGContextRelease(context);
     CGImageRelease(outputCGImage);
-    
     return outputImage;
 }
 
@@ -99,15 +98,17 @@
     UIImage *outputImage = [UIImage imageWithCGImage:outputCGImage];
     CGColorSpaceRelease(colorSpace);
     CGContextRelease(context);
+    CGImageRelease(outputCGImage);
     free(pixels);
-    
     return outputImage;
 }
 
-/*
-- (UIImage *)createImageWithImage:(UIImage *)image inRect:(CGRect)rect {
-    return nil;
+- (UIImage *)imageFromImage:(UIImage *)image inRect:(CGRect)rect {
+    CGImageRef inputCGImage = [image CGImage];
+    CGImageRef outputCGImage = CGImageCreateWithImageInRect(inputCGImage, rect);
+    UIImage *outputImage = [UIImage imageWithCGImage:outputCGImage];
+    CGImageRelease(outputCGImage);
+    return outputImage;
 }
-*/
 
 @end

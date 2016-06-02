@@ -135,8 +135,6 @@
 				6CFCEA171CF54D9D00CC08A7 /* AppDelegate.m */,
 				6CFCEA191CF54D9D00CC08A7 /* ViewController.h */,
 				6CFCEA1A1CF54D9D00CC08A7 /* ViewController.m */,
-				6C5406FB1CFFB5F2005CCD66 /* SRAxis.h */,
-				6C5406FC1CFFB5F2005CCD66 /* SRAxis.m */,
 				6C5406FE1CFFCD29005CCD66 /* SRImage.h */,
 				6C5406FF1CFFCD29005CCD66 /* SRImage.m */,
 				6CFCEA1C1CF54D9D00CC08A7 /* Main.storyboard */,
@@ -146,6 +144,8 @@
 				6CFCEA131CF54D9D00CC08A7 /* Supporting Files */,
 				6C5405A51CFD7375005CCD66 /* Test.h */,
 				6C5405A61CFD7375005CCD66 /* Test.mm */,
+				6C5406FB1CFFB5F2005CCD66 /* SRAxis.h */,
+				6C5406FC1CFFB5F2005CCD66 /* SRAxis.m */,
 			);
 			path = Hello;
 			sourceTree = "<group>";

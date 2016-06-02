@@ -10,4 +10,8 @@
 
 @implementation SRImage
 
+- (void)logPixels {
+    
+}
+
 @end

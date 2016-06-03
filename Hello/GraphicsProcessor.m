@@ -151,6 +151,14 @@
         }
         printf("%d ", shadow[i]);
     }
+    
+    [self trimImage:slices[0]];
+    for (NSUInteger i = 0; i < slices.count; i++) {
+        UIImage *slice = slices[i];
+        
+        slices[i] = [self trimImage:slice];
+    }
+    
     return slices;
 }
 
@@ -163,7 +171,58 @@
 }
 
 - (UIImage *)trimImage:(UIImage *)image {
-    return nil;
+    NSLog(@"\n\n");
+    NSLog(@"%f", image.size.height);
+    
+    CGImageRef inputCGImage = [image CGImage];
+    NSUInteger width = CGImageGetWidth(inputCGImage);
+    NSUInteger height = CGImageGetHeight(inputCGImage);
+    
+    UInt32 *pixels = (UInt32 *)calloc(height * width, sizeof(UInt32));
+    NSUInteger bytesPerPixel = 4;
+    NSUInteger bytesPerRow = bytesPerPixel * width;
+    NSUInteger bitsPerComponent = 8;
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGContextRef context = CGBitmapContextCreate(pixels, width, height, bitsPerComponent, bytesPerRow, colorSpace, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+    CGContextDrawImage(context, CGRectMake(0, 0, width, height), inputCGImage);
+    
+    NSUInteger shadow[height];
+    memset(shadow, 0, height * sizeof(NSUInteger));
+    for (NSUInteger j = 0; j < height; j++) {
+        for (NSUInteger i = 0; i < width; i++) {
+            UInt32 *currentPixel = pixels + (j * width) + i;
+            UInt32 color = *currentPixel;
+            UInt32 averageColor = (R(color) + G(color) + B(color)) / 3.0;
+            if (averageColor == 0) {
+                shadow[j]++;
+            }
+        }
+    }
+    
+    UIImage *slice;
+    NSUInteger top = 0;
+    NSUInteger bottom = 0;
+    int flag = 0;
+    for (NSUInteger j = 0; j < height; j++) {
+        if (shadow[j] == 0 && flag == 1) {
+            printf(" > ");
+            flag = 0;
+            
+            bottom = j;
+            printf(" { %d, %d } ", top, bottom);
+            slice = [self sliceImage:image inRect:CGRectMake(0, top, width, bottom - top)];
+        }
+        if (shadow[j] != 0 && flag == 0) {
+            printf(" < ");
+            flag = 1;
+            
+            top = j;
+        }
+        printf("%d ", shadow[j]);
+    }
+    
+    NSLog(@"%f", slice.size.height);
+    return slice;
 }
 
 @end

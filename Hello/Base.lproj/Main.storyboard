@@ -16,23 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OxT-8a-xTn">
-                                <rect key="frame" x="20" y="20" width="390" height="50"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vMH-rv-DrG">
-                                <rect key="frame" x="20" y="78" width="390" height="50"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ab-UG-z6x">
-                                <rect key="frame" x="20" y="136" width="390" height="50"/>
+                                <rect key="frame" x="20" y="28" width="390" height="50"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2gM-zq-TBb">
-                                <rect key="frame" x="20" y="194" width="50" height="50"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BsV-dc-yfP">
-                                <rect key="frame" x="100" y="194" width="50" height="50"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8mx-Nr-eOI">
-                                <rect key="frame" x="180" y="194" width="50" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WVP-pa-zGU">
+                                <rect key="frame" x="474" y="28" width="50" height="50"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -41,11 +29,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="bwImageView" destination="5ab-UG-z6x" id="D9w-z9-dh2"/>
-                        <outlet property="grayImageView" destination="vMH-rv-DrG" id="r2N-ZG-GlB"/>
-                        <outlet property="imageView" destination="OxT-8a-xTn" id="iZ8-To-eNk"/>
-                        <outlet property="slice1ImageView" destination="2gM-zq-TBb" id="vKF-ku-Kqy"/>
-                        <outlet property="slice2ImageView" destination="BsV-dc-yfP" id="nCa-Nb-TnQ"/>
-                        <outlet property="slice3ImageView" destination="8mx-Nr-eOI" id="TCX-Tn-zSK"/>
+                        <outlet property="font1ImageView" destination="WVP-pa-zGU" id="7Wa-Va-22B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

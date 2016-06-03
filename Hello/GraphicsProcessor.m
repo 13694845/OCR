@@ -70,7 +70,7 @@
 }
 
 - (UIImage *)binaryImage:(UIImage *)image {
-    const UInt32 threshold = 120;
+    const UInt32 threshold = 123;
     
     CGImageRef inputCGImage = [image CGImage];
     NSUInteger width = CGImageGetWidth(inputCGImage);

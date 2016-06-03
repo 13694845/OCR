@@ -26,7 +26,13 @@
                                 <rect key="frame" x="20" y="136" width="390" height="50"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2gM-zq-TBb">
-                                <rect key="frame" x="20" y="194" width="390" height="50"/>
+                                <rect key="frame" x="20" y="194" width="30" height="50"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8mx-Nr-eOI">
+                                <rect key="frame" x="120" y="194" width="30" height="50"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BsV-dc-yfP">
+                                <rect key="frame" x="70" y="194" width="30" height="50"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -37,7 +43,9 @@
                         <outlet property="bwImageView" destination="5ab-UG-z6x" id="D9w-z9-dh2"/>
                         <outlet property="grayImageView" destination="vMH-rv-DrG" id="r2N-ZG-GlB"/>
                         <outlet property="imageView" destination="OxT-8a-xTn" id="iZ8-To-eNk"/>
-                        <outlet property="sliceImageView" destination="2gM-zq-TBb" id="lKs-d4-2Ux"/>
+                        <outlet property="slice1ImageView" destination="2gM-zq-TBb" id="vKF-ku-Kqy"/>
+                        <outlet property="slice2ImageView" destination="BsV-dc-yfP" id="nCa-Nb-TnQ"/>
+                        <outlet property="slice3ImageView" destination="8mx-Nr-eOI" id="TCX-Tn-zSK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

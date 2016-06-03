@@ -129,67 +129,41 @@
         }
     }
     
-    
+    NSMutableArray *slices = [NSMutableArray array];
+    NSUInteger left = 0;
+    NSUInteger right = 0;
     int flag = 0;
     for (NSUInteger i = 0; i < width; i++) {
         if (shadow[i] == 0 && flag == 1) {
             printf(" > ");
             flag = 0;
+            
+            right = i;
+            printf(" { %d, %d } ", left, right);
+            UIImage *slice = [self sliceImage:image inRect:CGRectMake(left, 0, right - left, height)];
+            [slices addObject:slice];
         }
         if (shadow[i] != 0 && flag == 0) {
             printf(" < ");
             flag = 1;
+            
+            left = i;
         }
         printf("%d ", shadow[i]);
     }
-    
-    
-    return nil;
+    return slices;
 }
 
-- (UIImage *)trimImage:(UIImage *)image {
-    return nil;
-}
-
-
-
-/*
-
-- (NSArray *)rectsForSlicesWithImage:(UIImage *)image alongX {
-    
-}
-
-// edge
-
-
-
-
-- (NSArray *)rectsForSlice {
-    
-}
-
-
-- (NSArray *)slicesOfImage    OfSlice {
-    return nil;
-}
-
-
-
-- (NSArray *)rects    OfSlice {
-    return nil;
-}
-
-- (NSArray *)slicesFromImage:(UIImage *)image inRects:(NSArray *)rects {
-    return nil;
-}
-
-- (UIImage *)imageFromImage:(UIImage *)image inRect:(CGRect)rect {
+- (UIImage *)sliceImage:(UIImage *)image inRect:(CGRect)rect {
     CGImageRef inputCGImage = [image CGImage];
     CGImageRef outputCGImage = CGImageCreateWithImageInRect(inputCGImage, rect);
     UIImage *outputImage = [UIImage imageWithCGImage:outputCGImage];
     CGImageRelease(outputCGImage);
     return outputImage;
 }
-*/
+
+- (UIImage *)trimImage:(UIImage *)image {
+    return nil;
+}
 
 @end

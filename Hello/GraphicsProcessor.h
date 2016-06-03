@@ -15,9 +15,6 @@
 - (void)logImage:(UIImage *)image;
 - (UIImage *)grayImage:(UIImage *)image;
 - (UIImage *)binaryImage:(UIImage *)image;
-
 - (NSArray *)divideImage:(UIImage *)image;
-
-// - (UIImage *)imageFromImage:(UIImage *)image inRect:(CGRect)rect;
 
 @end

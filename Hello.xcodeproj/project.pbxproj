@@ -19,6 +19,7 @@
 		6C5407111D012302005CCD66 /* font_B.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5407101D012302005CCD66 /* font_B.jpg */; };
 		6C5407131D0123C4005CCD66 /* font_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5407121D0123C4005CCD66 /* font_0.jpg */; };
 		6C5407151D0123FD005CCD66 /* font_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5407141D0123FD005CCD66 /* font_1.jpg */; };
+		6C5407191D0125BB005CCD66 /* font.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C5407181D0125BB005CCD66 /* font.jpg */; };
 		6CFCEA151CF54D9D00CC08A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA141CF54D9D00CC08A7 /* main.m */; };
 		6CFCEA181CF54D9D00CC08A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA171CF54D9D00CC08A7 /* AppDelegate.m */; };
 		6CFCEA1B1CF54D9D00CC08A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA1A1CF54D9D00CC08A7 /* ViewController.m */; };
@@ -50,6 +51,7 @@
 		6C5407101D012302005CCD66 /* font_B.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_B.jpg; sourceTree = "<group>"; };
 		6C5407121D0123C4005CCD66 /* font_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_0.jpg; sourceTree = "<group>"; };
 		6C5407141D0123FD005CCD66 /* font_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_1.jpg; sourceTree = "<group>"; };
+		6C5407181D0125BB005CCD66 /* font.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font.jpg; sourceTree = "<group>"; };
 		6CFCEA101CF54D9D00CC08A7 /* Hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFCEA141CF54D9D00CC08A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CFCEA161CF54D9D00CC08A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				6C5406E91CFEB50D005CCD66 /* vin.png */,
 				6C54070C1D012052005CCD66 /* vin_light.png */,
 				6C54070E1D0121AF005CCD66 /* vin_dark.png */,
+				6C5407181D0125BB005CCD66 /* font.jpg */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C5407191D0125BB005CCD66 /* font.jpg in Resources */,
 				6CFCEA231CF54D9D00CC08A7 /* LaunchScreen.storyboard in Resources */,
 				6CFCEA201CF54D9D00CC08A7 /* Assets.xcassets in Resources */,
 				6C5407091D011E38005CCD66 /* font_8.jpg in Resources */,

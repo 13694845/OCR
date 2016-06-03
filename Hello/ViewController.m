@@ -31,6 +31,8 @@
     // [[GraphicsProcessor sharedProcessor] logImage:binaryImage];
     // self.font1ImageView.image = [UIImage imageNamed:@"font_0.jpg"];
     
+    
+    
     NSArray *slices = [[GraphicsProcessor sharedProcessor] divideImage:binaryImage];
     CGFloat space = 30.0;
     for (int i = 0; i < slices.count; i++) {
@@ -41,7 +43,7 @@
         imageView.image = slices[i];
         [self.view addSubview:imageView];
         
-        NSString *fontPath = [[NSBundle mainBundle] pathForResource:@"font_B.jpg" ofType:nil];
+        NSString *fontPath = [[NSBundle mainBundle] pathForResource:@"font_1.jpg" ofType:nil];
 
         NSData *imageData = UIImageJPEGRepresentation(slices[i], 1.0);
         NSString *temporaryDirectory = NSTemporaryDirectory();

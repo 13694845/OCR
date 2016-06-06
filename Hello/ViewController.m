@@ -10,6 +10,8 @@
 #import "GraphicsProcessor.h"
 #import "Test.h"
 
+#import "Font.h"
+
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *bwImageView;
@@ -42,6 +44,8 @@
     
     NSDictionary *dcit = [NSJSONSerialization JSONObjectWithData:d options:NSJSONReadingMutableLeaves error:nil];
      */
+    
+    // NSArray *characters = [Font sharedFont].allCharacters;
     
     
     

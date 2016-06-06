@@ -20,7 +20,7 @@
     static Font *sharedFont = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedFont = [[self alloc] init];
+        sharedFont = [[self alloc] initWithContentsOfJson];
     });
     return sharedFont;
 }

@@ -58,9 +58,10 @@
     // [[GraphicsProcessor sharedProcessor] logImage:binaryImage];
     // self.font1ImageView.image = [UIImage imageNamed:@"font_0.jpg"];
     
+    // slices.count
     NSArray *slices = [[GraphicsProcessor sharedProcessor] divideImage:binaryImage];
     CGFloat space = 30.0;
-    for (int i = 0; i < slices.count; i++) {
+    for (int i = 0; i < 1; i++) {
         CGFloat xOffset = space * i;
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20.0 + xOffset, 100.0, 25.0, 25.0)];
         imageView.contentMode = UIViewContentModeScaleAspectFit;
@@ -68,7 +69,7 @@
         imageView.image = slices[i];
         [self.view addSubview:imageView];
         
-        NSString *fontPath = [[NSBundle mainBundle] pathForResource:@"font_M.jpg" ofType:nil];
+//        NSString *fontPath = [[NSBundle mainBundle] pathForResource:@"font_M.jpg" ofType:nil];
 
         NSData *imageData = UIImageJPEGRepresentation(slices[i], 1.0);
         NSString *temporaryDirectory = NSTemporaryDirectory();
@@ -77,10 +78,31 @@
         NSLog(@"imagePath : %@", imagePath);
         
         CharacterRecognizer *recognizer = [[CharacterRecognizer alloc] init];
-        int result = [recognizer similarityOfImage:imagePath andImage:fontPath];
+        
+        
+        NSArray *characters = [Font sharedFont].allCharacters;
+        
+        for (NSDictionary *character in characters) {
+            NSLog(@"sample : %@", character[@"sample"]);
+            
+            NSString *fontPath = [[NSBundle mainBundle] pathForResource:character[@"sample"] ofType:nil];
+
+            int result = [recognizer similarityOfImage:imagePath andImage:fontPath];
+            
+            NSLog(@"similarityOfImage : %d", result);
+
+        }
+        
+        
+        
+        
+     //   int result = [recognizer similarityOfImage:imagePath andImage:fontPath];
+        
+        /*
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20.0 + xOffset, 130.0, 25.0, 25.0)];
         label.text = [NSString stringWithFormat:@"%d", result];
         [self.view addSubview:label];
+         */
     }
     
     /*

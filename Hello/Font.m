@@ -35,7 +35,7 @@
 }
 
 - (NSArray *)allCharacters {
-    return nil;
+    return self.font[@"characters"];
 }
 
 @end

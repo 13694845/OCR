@@ -109,11 +109,9 @@
         
      //   int result = [recognizer similarityOfImage:imagePath andImage:fontPath];
         
-        /*
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20.0 + xOffset, 130.0, 25.0, 25.0)];
-        label.text = [NSString stringWithFormat:@"%d", result];
+        label.text = res;
         [self.view addSubview:label];
-         */
     }
     
     /*

@@ -10,6 +10,8 @@
 
 @interface CharacterRecognizer : NSObject
 
-- (int)similarityOfImage:(NSString *)imageA andImage:(NSString *)imageB;
+- (int)distanceBetweenImage:(NSString *)imageA andImage:(NSString *)imageB;
+
+- (NSString *)characterForImage:(NSString *)image;
 
 @end

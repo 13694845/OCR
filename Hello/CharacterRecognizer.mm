@@ -7,30 +7,34 @@
 //
 
 #import "CharacterRecognizer.h"
+#import "SampleBook.h"
 #include "pHash.h"
 
 @implementation CharacterRecognizer
 
-- (int)similarityOfImage:(NSString *)imageA andImage:(NSString *)imageB {
+- (int)distanceBetweenImage:(NSString *)imageA andImage:(NSString *)imageB {
+    int distance = -1;
     ulong64 hash1;
     const char *path1 = [imageA UTF8String];
     ph_dct_imagehash(path1, hash1);
-    
     ulong64 hash2;
     const char *path2 = [imageB UTF8String];
     ph_dct_imagehash(path2, hash2);
-    
-    int distance = -1;
     distance = ph_hamming_distance(hash1, hash2);
-    
-    /*
-    printf("\n\n");
-    NSLog(@"hash a : %llu\n", hash1);
-    NSLog(@"hash b : %llu\n", hash2);
-    NSLog(@"distance : %d\n", distance);
-    */
-    
     return distance;
+}
+
+- (NSString *)characterForImage:(NSString *)image {
+    NSString *character = @"?";
+    int nearest = 100;
+    for (NSDictionary *sample in [[SampleBook sharedBook] allSamples]) {
+        int distance = [self distanceBetweenImage:image andImage:[[NSBundle mainBundle] pathForResource:sample[@"image"] ofType:nil]];
+        if (distance < nearest) {
+            nearest = distance;
+            character = sample[@"character"];
+        }
+    }
+    return character;
 }
 
 @end

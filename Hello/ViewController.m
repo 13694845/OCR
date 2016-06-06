@@ -36,6 +36,15 @@
     NSLog(@"binary.jpg : %@", imagePath);
      */
     
+    /*
+    NSString *p = [[NSBundle mainBundle] pathForResource:@"font" ofType:@"json"];
+    NSData *d = [NSData dataWithContentsOfFile:p];
+    
+    NSDictionary *dcit = [NSJSONSerialization JSONObjectWithData:d options:NSJSONReadingMutableLeaves error:nil];
+     */
+    
+    
+    
     UIImage *image = [UIImage imageNamed:@"vin"];
     
     UIImage *grayImage = [[GraphicsProcessor sharedProcessor] grayImage:image];

@@ -61,7 +61,7 @@
     // slices.count
     NSArray *slices = [[GraphicsProcessor sharedProcessor] divideImage:binaryImage];
     CGFloat space = 30.0;
-    for (int i = 0; i < 1; i++) {
+    for (int i = 2; i < 3; i++) {
         CGFloat xOffset = space * i;
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20.0 + xOffset, 100.0, 25.0, 25.0)];
         imageView.contentMode = UIViewContentModeScaleAspectFit;
@@ -75,25 +75,34 @@
         NSString *temporaryDirectory = NSTemporaryDirectory();
         NSString *imagePath = [temporaryDirectory stringByAppendingString:@"slice.jpg"];
         [imageData writeToFile:imagePath atomically:YES];
-        NSLog(@"imagePath : %@", imagePath);
+  //      NSLog(@"imagePath : %@", imagePath);
         
         CharacterRecognizer *recognizer = [[CharacterRecognizer alloc] init];
         
         
         NSArray *characters = [Font sharedFont].allCharacters;
         
+        NSString *res = @"?";
+        
+        int min = 99;
+        
         for (NSDictionary *character in characters) {
-            NSLog(@"sample : %@", character[@"sample"]);
+ //           NSLog(@"sample : %@", character[@"sample"]);
             
             NSString *fontPath = [[NSBundle mainBundle] pathForResource:character[@"sample"] ofType:nil];
 
             int result = [recognizer similarityOfImage:imagePath andImage:fontPath];
             
-            NSLog(@"similarityOfImage : %d", result);
+            NSLog(@"similarityOfImage : %@ --- %d", character[@"character"], result);
+            
+            if (result < min) {
+                min = result;
+                res = character[@"character"];
+            }
 
         }
         
-        
+        NSLog(@"******************************** %@", res);
         
         
      //   int result = [recognizer similarityOfImage:imagePath andImage:fontPath];

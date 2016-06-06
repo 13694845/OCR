@@ -10,4 +10,13 @@
 
 @implementation Font
 
++ (instancetype)sharedFont {
+    static Font *sharedFont = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedFont = [[self alloc] init];
+    });
+    return sharedFont;
+}
+
 @end

@@ -10,4 +10,6 @@
 
 @interface Font : NSObject
 
++ (instancetype)sharedFont;
+
 @end

@@ -32,6 +32,8 @@
 		6C0075651D05146300FD5DC7 /* font_A.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075621D05146300FD5DC7 /* font_A.jpg */; };
 		6C0075661D05146300FD5DC7 /* font_D.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075631D05146300FD5DC7 /* font_D.jpg */; };
 		6C0075671D05146300FD5DC7 /* font_S.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075641D05146300FD5DC7 /* font_S.jpg */; };
+		6C00756A1D05151300FD5DC7 /* font_F.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075681D05151300FD5DC7 /* font_F.jpg */; };
+		6C00756B1D05151300FD5DC7 /* font_G.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075691D05151300FD5DC7 /* font_G.jpg */; };
 		6C5405A71CFD7375005CCD66 /* Test.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C5405A61CFD7375005CCD66 /* Test.mm */; };
 		6C5406C21CFEAE0C005CCD66 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C5406C11CFEAE0C005CCD66 /* libjpeg.a */; };
 		6C5406EA1CFEB50D005CCD66 /* vin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406E91CFEB50D005CCD66 /* vin.png */; };
@@ -71,6 +73,8 @@
 		6C0075621D05146300FD5DC7 /* font_A.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_A.jpg; sourceTree = "<group>"; };
 		6C0075631D05146300FD5DC7 /* font_D.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_D.jpg; sourceTree = "<group>"; };
 		6C0075641D05146300FD5DC7 /* font_S.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_S.jpg; sourceTree = "<group>"; };
+		6C0075681D05151300FD5DC7 /* font_F.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_F.jpg; sourceTree = "<group>"; };
+		6C0075691D05151300FD5DC7 /* font_G.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_G.jpg; sourceTree = "<group>"; };
 		6C5405A51CFD7375005CCD66 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		6C5405A61CFD7375005CCD66 /* Test.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Test.mm; sourceTree = "<group>"; };
 		6C5406BD1CFEAE0C005CCD66 /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 				6C0075621D05146300FD5DC7 /* font_A.jpg */,
 				6C0075641D05146300FD5DC7 /* font_S.jpg */,
 				6C0075631D05146300FD5DC7 /* font_D.jpg */,
+				6C0075681D05151300FD5DC7 /* font_F.jpg */,
+				6C0075691D05151300FD5DC7 /* font_G.jpg */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -286,8 +292,10 @@
 				6C00753D1D05057E00FD5DC7 /* font_3.jpg in Resources */,
 				6C00754F1D05099A00FD5DC7 /* font_Q.jpg in Resources */,
 				6C0075491D0508CC00FD5DC7 /* font_9.jpg in Resources */,
+				6C00756B1D05151300FD5DC7 /* font_G.jpg in Resources */,
 				6C0075611D05145700FD5DC7 /* font_P.jpg in Resources */,
 				6C0075531D050C8900FD5DC7 /* font_E.jpg in Resources */,
+				6C00756A1D05151300FD5DC7 /* font_F.jpg in Resources */,
 				6C00754D1D05090E00FD5DC7 /* font_.jpg in Resources */,
 				6CFCEA231CF54D9D00CC08A7 /* LaunchScreen.storyboard in Resources */,
 				6C0075661D05146300FD5DC7 /* font_D.jpg in Resources */,

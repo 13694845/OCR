@@ -45,10 +45,10 @@
     for (NSUInteger j = 0; j < height; j++) {
         for (NSUInteger i = 0; i < width; i++) {
             UInt32 color = *currentPixel;
-//            printf("%3.0f ", (R(color) + G(color) + B(color)) / 3.0);
+            printf("%3.0f ", (R(color) + G(color) + B(color)) / 3.0);
             currentPixel++;
         }
-//        printf("\n");
+        printf("\n");
     }
     free(pixels);
 }
@@ -135,30 +135,28 @@
     int flag = 0;
     for (NSUInteger i = 0; i < width; i++) {
         if (shadow[i] == 0 && flag == 1) {
-//            printf(" > ");
+            // printf(" > ");
             flag = 0;
             
             right = i;
-  //          printf(" { %d, %d } ", left, right);
+            // printf(" { %d, %d } ", left, right);
             UIImage *slice = [self sliceImage:image inRect:CGRectMake(left, 0, right - left, height)];
             [slices addObject:slice];
         }
         if (shadow[i] != 0 && flag == 0) {
- //           printf(" < ");
+            // printf(" < ");
             flag = 1;
             
             left = i;
         }
- //       printf("%d ", shadow[i]);
+        // printf("%d ", shadow[i]);
     }
     
     [self trimImage:slices[0]];
     for (NSUInteger i = 0; i < slices.count; i++) {
         UIImage *slice = slices[i];
-        
         slices[i] = [self trimImage:slice];
     }
-    
     return slices;
 }
 
@@ -171,8 +169,8 @@
 }
 
 - (UIImage *)trimImage:(UIImage *)image {
-//    NSLog(@"\n\n");
-//    NSLog(@"%f", image.size.height);
+    // NSLog(@"\n\n");
+    // NSLog(@"%f", image.size.height);
     
     CGImageRef inputCGImage = [image CGImage];
     NSUInteger width = CGImageGetWidth(inputCGImage);
@@ -205,23 +203,22 @@
     int flag = 0;
     for (NSUInteger j = 0; j < height; j++) {
         if (shadow[j] == 0 && flag == 1) {
-  //          printf(" > ");
+            // printf(" > ");
             flag = 0;
             
             bottom = j;
- //           printf(" { %d, %d } ", top, bottom);
+            // printf(" { %d, %d } ", top, bottom);
             slice = [self sliceImage:image inRect:CGRectMake(0, top, width, bottom - top)];
         }
         if (shadow[j] != 0 && flag == 0) {
- //           printf(" < ");
+            // printf(" < ");
             flag = 1;
             
             top = j;
         }
- //       printf("%d ", shadow[j]);
+        // printf("%d ", shadow[j]);
     }
-    
-//    NSLog(@"%f", slice.size.height);
+    // NSLog(@"%f", slice.size.height);
     return slice;
 }
 

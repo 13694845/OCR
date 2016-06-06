@@ -34,6 +34,13 @@
 		6C0075671D05146300FD5DC7 /* font_S.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075641D05146300FD5DC7 /* font_S.jpg */; };
 		6C00756A1D05151300FD5DC7 /* font_F.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075681D05151300FD5DC7 /* font_F.jpg */; };
 		6C00756B1D05151300FD5DC7 /* font_G.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075691D05151300FD5DC7 /* font_G.jpg */; };
+		6C00756F1D0515DC00FD5DC7 /* font_H.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C00756C1D0515DC00FD5DC7 /* font_H.jpg */; };
+		6C0075701D0515DC00FD5DC7 /* font_J.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C00756D1D0515DC00FD5DC7 /* font_J.jpg */; };
+		6C0075711D0515DC00FD5DC7 /* font_K.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C00756E1D0515DC00FD5DC7 /* font_K.jpg */; };
+		6C0075731D05160C00FD5DC7 /* font_L.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075721D05160C00FD5DC7 /* font_L.jpg */; };
+		6C0075751D0517C600FD5DC7 /* font_Z.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075741D0517C600FD5DC7 /* font_Z.jpg */; };
+		6C0075771D0517FF00FD5DC7 /* font_C.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075761D0517FF00FD5DC7 /* font_C.jpg */; };
+		6C0075791D05180A00FD5DC7 /* font_X.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075781D05180A00FD5DC7 /* font_X.jpg */; };
 		6C5405A71CFD7375005CCD66 /* Test.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C5405A61CFD7375005CCD66 /* Test.mm */; };
 		6C5406C21CFEAE0C005CCD66 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C5406C11CFEAE0C005CCD66 /* libjpeg.a */; };
 		6C5406EA1CFEB50D005CCD66 /* vin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406E91CFEB50D005CCD66 /* vin.png */; };
@@ -75,6 +82,13 @@
 		6C0075641D05146300FD5DC7 /* font_S.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_S.jpg; sourceTree = "<group>"; };
 		6C0075681D05151300FD5DC7 /* font_F.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_F.jpg; sourceTree = "<group>"; };
 		6C0075691D05151300FD5DC7 /* font_G.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_G.jpg; sourceTree = "<group>"; };
+		6C00756C1D0515DC00FD5DC7 /* font_H.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_H.jpg; sourceTree = "<group>"; };
+		6C00756D1D0515DC00FD5DC7 /* font_J.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_J.jpg; sourceTree = "<group>"; };
+		6C00756E1D0515DC00FD5DC7 /* font_K.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_K.jpg; sourceTree = "<group>"; };
+		6C0075721D05160C00FD5DC7 /* font_L.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_L.jpg; sourceTree = "<group>"; };
+		6C0075741D0517C600FD5DC7 /* font_Z.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_Z.jpg; sourceTree = "<group>"; };
+		6C0075761D0517FF00FD5DC7 /* font_C.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_C.jpg; sourceTree = "<group>"; };
+		6C0075781D05180A00FD5DC7 /* font_X.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_X.jpg; sourceTree = "<group>"; };
 		6C5405A51CFD7375005CCD66 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		6C5405A61CFD7375005CCD66 /* Test.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Test.mm; sourceTree = "<group>"; };
 		6C5406BD1CFEAE0C005CCD66 /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
@@ -157,6 +171,13 @@
 				6C0075631D05146300FD5DC7 /* font_D.jpg */,
 				6C0075681D05151300FD5DC7 /* font_F.jpg */,
 				6C0075691D05151300FD5DC7 /* font_G.jpg */,
+				6C00756C1D0515DC00FD5DC7 /* font_H.jpg */,
+				6C00756D1D0515DC00FD5DC7 /* font_J.jpg */,
+				6C00756E1D0515DC00FD5DC7 /* font_K.jpg */,
+				6C0075721D05160C00FD5DC7 /* font_L.jpg */,
+				6C0075741D0517C600FD5DC7 /* font_Z.jpg */,
+				6C0075781D05180A00FD5DC7 /* font_X.jpg */,
+				6C0075761D0517FF00FD5DC7 /* font_C.jpg */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -285,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C0075711D0515DC00FD5DC7 /* font_K.jpg in Resources */,
 				6C00755E1D05124200FD5DC7 /* font_I.jpg in Resources */,
 				6C00753B1D05052B00FD5DC7 /* font_1.jpg in Resources */,
 				6C0075451D05073900FD5DC7 /* font_7.jpg in Resources */,
@@ -307,7 +329,12 @@
 				6C0075511D050C0100FD5DC7 /* font_W.jpg in Resources */,
 				6C0075411D05060500FD5DC7 /* font_5.jpg in Resources */,
 				6C0075651D05146300FD5DC7 /* font_A.jpg in Resources */,
+				6C0075771D0517FF00FD5DC7 /* font_C.jpg in Resources */,
 				6C0075351D0502FA00FD5DC7 /* font.jpg in Resources */,
+				6C0075791D05180A00FD5DC7 /* font_X.jpg in Resources */,
+				6C0075731D05160C00FD5DC7 /* font_L.jpg in Resources */,
+				6C0075751D0517C600FD5DC7 /* font_Z.jpg in Resources */,
+				6C00756F1D0515DC00FD5DC7 /* font_H.jpg in Resources */,
 				6C0075471D05084D00FD5DC7 /* font_8.jpg in Resources */,
 				6C0075571D05110200FD5DC7 /* font_T.jpg in Resources */,
 				6C00755F1D05124200FD5DC7 /* font_O.jpg in Resources */,
@@ -316,6 +343,7 @@
 				6C5406EA1CFEB50D005CCD66 /* vin.png in Resources */,
 				6C00755B1D05118200FD5DC7 /* font_Y.jpg in Resources */,
 				6C00753F1D0505BF00FD5DC7 /* font_4.jpg in Resources */,
+				6C0075701D0515DC00FD5DC7 /* font_J.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,12 @@
 
 #import "Font.h"
 
+@interface Font ()
+
+@property (strong, nonatomic) NSDictionary *font;
+
+@end
+
 @implementation Font
 
 + (instancetype)sharedFont {
@@ -17,6 +23,19 @@
         sharedFont = [[self alloc] init];
     });
     return sharedFont;
+}
+
+- (instancetype)initWithContentsOfJson {
+    self = [super init];
+    if (self) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"font" ofType:@"json"];
+        _font = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:path] options:NSJSONReadingMutableLeaves error:nil];
+    }
+    return self;
+}
+
+- (NSArray *)allCharacters {
+    return nil;
 }
 
 @end

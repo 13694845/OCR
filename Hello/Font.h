@@ -12,4 +12,6 @@
 
 + (instancetype)sharedFont;
 
+- (NSArray *)allCharacters;
+
 @end

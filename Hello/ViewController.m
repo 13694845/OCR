@@ -22,6 +22,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    /*
+    UIImage *image = [UIImage imageNamed:@"font.jpg"];
+    
+    UIImage *grayImage = [[GraphicsProcessor sharedProcessor] grayImage:image];
+    
+    UIImage *binaryImage = [[GraphicsProcessor sharedProcessor] binaryImage:grayImage];
+    
+    NSData *imageData = UIImageJPEGRepresentation(binaryImage, 1.0);
+    NSString *temporaryDirectory = NSTemporaryDirectory();
+    NSString *imagePath = [temporaryDirectory stringByAppendingString:@"binary.jpg"];
+    [imageData writeToFile:imagePath atomically:YES];
+    NSLog(@"binary.jpg : %@", imagePath);
+     */
+    
     UIImage *image = [UIImage imageNamed:@"vin"];
     
     UIImage *grayImage = [[GraphicsProcessor sharedProcessor] grayImage:image];
@@ -30,8 +44,6 @@
     self.bwImageView.image = binaryImage;
     // [[GraphicsProcessor sharedProcessor] logImage:binaryImage];
     // self.font1ImageView.image = [UIImage imageNamed:@"font_0.jpg"];
-    
-    
     
     NSArray *slices = [[GraphicsProcessor sharedProcessor] divideImage:binaryImage];
     CGFloat space = 30.0;
@@ -43,12 +55,13 @@
         imageView.image = slices[i];
         [self.view addSubview:imageView];
         
-        NSString *fontPath = [[NSBundle mainBundle] pathForResource:@"font.jpg" ofType:nil];
+        NSString *fontPath = [[NSBundle mainBundle] pathForResource:@"font_Y.jpg" ofType:nil];
 
         NSData *imageData = UIImageJPEGRepresentation(slices[i], 1.0);
         NSString *temporaryDirectory = NSTemporaryDirectory();
         NSString *imagePath = [temporaryDirectory stringByAppendingString:@"slice.jpg"];
         [imageData writeToFile:imagePath atomically:YES];
+        NSLog(@"imagePath : %@", imagePath);
         
         Test *test = [[Test alloc] init];
         int result = [test similarityOfImage:imagePath andImage:fontPath];

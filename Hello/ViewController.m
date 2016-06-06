@@ -61,7 +61,7 @@
     // slices.count
     NSArray *slices = [[GraphicsProcessor sharedProcessor] divideImage:binaryImage];
     CGFloat space = 30.0;
-    for (int i = 2; i < 3; i++) {
+    for (int i = 0; i < slices.count; i++) {
         CGFloat xOffset = space * i;
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20.0 + xOffset, 100.0, 25.0, 25.0)];
         imageView.contentMode = UIViewContentModeScaleAspectFit;
@@ -86,6 +86,8 @@
         
         int min = 99;
         
+        self.font1ImageView.image = [UIImage imageNamed:@"font_W.jpg"];
+        
         for (NSDictionary *character in characters) {
  //           NSLog(@"sample : %@", character[@"sample"]);
             
@@ -93,7 +95,7 @@
 
             int result = [recognizer similarityOfImage:imagePath andImage:fontPath];
             
-            NSLog(@"similarityOfImage : %@ --- %d", character[@"character"], result);
+  //          NSLog(@"similarityOfImage : %@ --- %d", character[@"character"], result);
             
             if (result < min) {
                 min = result;

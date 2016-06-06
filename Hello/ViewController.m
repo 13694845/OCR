@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "GraphicsProcessor.h"
-#import "Test.h"
+#import "CharacterRecognizer.h"
 
 #import "Font.h"
 
@@ -76,8 +76,8 @@
         [imageData writeToFile:imagePath atomically:YES];
         NSLog(@"imagePath : %@", imagePath);
         
-        Test *test = [[Test alloc] init];
-        int result = [test similarityOfImage:imagePath andImage:fontPath];
+        CharacterRecognizer *recognizer = [[CharacterRecognizer alloc] init];
+        int result = [recognizer similarityOfImage:imagePath andImage:fontPath];
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20.0 + xOffset, 130.0, 25.0, 25.0)];
         label.text = [NSString stringWithFormat:@"%d", result];
         [self.view addSubview:label];

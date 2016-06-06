@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Test : NSObject
+@interface CharacterRecognizer : NSObject
 
 - (int)similarityOfImage:(NSString *)imageA andImage:(NSString *)imageB;
 

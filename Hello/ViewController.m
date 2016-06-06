@@ -55,7 +55,7 @@
         imageView.image = slices[i];
         [self.view addSubview:imageView];
         
-        NSString *fontPath = [[NSBundle mainBundle] pathForResource:@"font_L.jpg" ofType:nil];
+        NSString *fontPath = [[NSBundle mainBundle] pathForResource:@"font_M.jpg" ofType:nil];
 
         NSData *imageData = UIImageJPEGRepresentation(slices[i], 1.0);
         NSString *temporaryDirectory = NSTemporaryDirectory();

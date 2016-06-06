@@ -1,0 +1,7 @@
+{
+    "font": [
+        {"character":"A", "sample":"font_A.jpg"},
+        {"character":"B", "sample":"font_B.jpg"},
+        {"character":"C", "sample":"font_C.jpg"}
+    ]
+}

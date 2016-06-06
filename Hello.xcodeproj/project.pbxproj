@@ -97,6 +97,7 @@
 		6C00757B1D05199700FD5DC7 /* font_M.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_M.jpg; sourceTree = "<group>"; };
 		6C00757C1D05199700FD5DC7 /* font_N.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_N.jpg; sourceTree = "<group>"; };
 		6C00757D1D05199700FD5DC7 /* font_V.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_V.jpg; sourceTree = "<group>"; };
+		6C0075831D0523FF00FD5DC7 /* font.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = font.json; sourceTree = "<group>"; };
 		6C5405A51CFD7375005CCD66 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		6C5405A61CFD7375005CCD66 /* Test.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Test.mm; sourceTree = "<group>"; };
 		6C5406BD1CFEAE0C005CCD66 /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
@@ -242,6 +243,7 @@
 				6CFCEA1A1CF54D9D00CC08A7 /* ViewController.m */,
 				6C5407011CFFD482005CCD66 /* GraphicsProcessor.h */,
 				6C5407021CFFD482005CCD66 /* GraphicsProcessor.m */,
+				6C0075831D0523FF00FD5DC7 /* font.json */,
 				6CFCEA1C1CF54D9D00CC08A7 /* Main.storyboard */,
 				6CFCEA1F1CF54D9D00CC08A7 /* Assets.xcassets */,
 				6CFCEA211CF54D9D00CC08A7 /* LaunchScreen.storyboard */,

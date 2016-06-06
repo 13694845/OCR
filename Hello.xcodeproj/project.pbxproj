@@ -46,6 +46,7 @@
 		6C0075801D05199700FD5DC7 /* font_N.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C00757C1D05199700FD5DC7 /* font_N.jpg */; };
 		6C0075811D05199700FD5DC7 /* font_V.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C00757D1D05199700FD5DC7 /* font_V.jpg */; };
 		6C0075851D0544FA00FD5DC7 /* font.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075841D0544FA00FD5DC7 /* font.json */; };
+		6C0075881D05460200FD5DC7 /* Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0075871D05460200FD5DC7 /* Font.m */; };
 		6C5405A71CFD7375005CCD66 /* Test.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C5405A61CFD7375005CCD66 /* Test.mm */; };
 		6C5406C21CFEAE0C005CCD66 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C5406C11CFEAE0C005CCD66 /* libjpeg.a */; };
 		6C5406EA1CFEB50D005CCD66 /* vin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406E91CFEB50D005CCD66 /* vin.png */; };
@@ -99,6 +100,8 @@
 		6C00757C1D05199700FD5DC7 /* font_N.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_N.jpg; sourceTree = "<group>"; };
 		6C00757D1D05199700FD5DC7 /* font_V.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_V.jpg; sourceTree = "<group>"; };
 		6C0075841D0544FA00FD5DC7 /* font.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = font.json; sourceTree = "<group>"; };
+		6C0075861D05460200FD5DC7 /* Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Font.h; sourceTree = "<group>"; };
+		6C0075871D05460200FD5DC7 /* Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Font.m; sourceTree = "<group>"; };
 		6C5405A51CFD7375005CCD66 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		6C5405A61CFD7375005CCD66 /* Test.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Test.mm; sourceTree = "<group>"; };
 		6C5406BD1CFEAE0C005CCD66 /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
@@ -252,6 +255,8 @@
 				6C5405A51CFD7375005CCD66 /* Test.h */,
 				6C5405A61CFD7375005CCD66 /* Test.mm */,
 				6C0075841D0544FA00FD5DC7 /* font.json */,
+				6C0075861D05460200FD5DC7 /* Font.h */,
+				6C0075871D05460200FD5DC7 /* Font.m */,
 			);
 			path = Hello;
 			sourceTree = "<group>";
@@ -379,6 +384,7 @@
 				6C5405A71CFD7375005CCD66 /* Test.mm in Sources */,
 				6CFCEA181CF54D9D00CC08A7 /* AppDelegate.m in Sources */,
 				6CFCEA151CF54D9D00CC08A7 /* main.m in Sources */,
+				6C0075881D05460200FD5DC7 /* Font.m in Sources */,
 				6C5407031CFFD482005CCD66 /* GraphicsProcessor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

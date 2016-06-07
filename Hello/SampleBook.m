@@ -26,8 +26,10 @@
 }
 
 - (instancetype)initWithContentsOfJson {
+    NSString *const json = @"samplebook.json";
+    
     if (self = [super init]) {
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"samplebook" ofType:@"json"];
+        NSString *path = [[NSBundle mainBundle] pathForResource:json ofType:nil];
         _samples = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:path] options:NSJSONReadingMutableLeaves error:nil];
     }
     return self;

@@ -27,9 +27,12 @@
     UIImage *grayImage = [graphicsProcessor grayImage:image];
     UIImage *binaryImage = [graphicsProcessor binaryImage:grayImage];
     self.binaryImageView.image = binaryImage;
-    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    GraphicsProcessor *graphicsProcessor = [[GraphicsProcessor alloc] init];
     CharacterRecognizer *characterRecognizer = [[CharacterRecognizer alloc] init];
-    NSArray *slices = [graphicsProcessor divideImage:binaryImage];
+    NSArray *slices = [graphicsProcessor divideImage:self.binaryImageView.image];
     for (int i = 0; i < slices.count; i++) {
         NSData *imageData = UIImageJPEGRepresentation(slices[i], 1.0);
         NSString *temporaryDirectory = NSTemporaryDirectory();

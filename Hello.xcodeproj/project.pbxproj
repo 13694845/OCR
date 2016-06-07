@@ -50,6 +50,7 @@
 		6C5407031CFFD482005CCD66 /* GraphicsProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5407021CFFD482005CCD66 /* GraphicsProcessor.m */; };
 		6CD81E781D064ECE00A12F83 /* samplebook.json in Resources */ = {isa = PBXBuildFile; fileRef = 6CD81E771D064ECE00A12F83 /* samplebook.json */; };
 		6CD81E7B1D064F1700A12F83 /* SampleBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD81E7A1D064F1700A12F83 /* SampleBook.m */; };
+		6CD81E7D1D065B0600A12F83 /* vin_d.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CD81E7C1D065B0600A12F83 /* vin_d.png */; };
 		6CFCEA151CF54D9D00CC08A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA141CF54D9D00CC08A7 /* main.m */; };
 		6CFCEA181CF54D9D00CC08A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA171CF54D9D00CC08A7 /* AppDelegate.m */; };
 		6CFCEA1B1CF54D9D00CC08A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA1A1CF54D9D00CC08A7 /* ViewController.m */; };
@@ -113,6 +114,7 @@
 		6CD81E771D064ECE00A12F83 /* samplebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = samplebook.json; sourceTree = "<group>"; };
 		6CD81E791D064F1700A12F83 /* SampleBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleBook.h; sourceTree = "<group>"; };
 		6CD81E7A1D064F1700A12F83 /* SampleBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleBook.m; sourceTree = "<group>"; };
+		6CD81E7C1D065B0600A12F83 /* vin_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vin_d.png; sourceTree = "<group>"; };
 		6CFCEA101CF54D9D00CC08A7 /* Hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFCEA141CF54D9D00CC08A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CFCEA161CF54D9D00CC08A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				6C5406E91CFEB50D005CCD66 /* vin.png */,
+				6CD81E7C1D065B0600A12F83 /* vin_d.png */,
 				6C0075361D05046600FD5DC7 /* font_0.jpg */,
 				6C00753A1D05052B00FD5DC7 /* font_1.jpg */,
 				6C0075381D0504DC00FD5DC7 /* font_2.jpg */,
@@ -360,6 +363,7 @@
 				6C5406EA1CFEB50D005CCD66 /* vin.png in Resources */,
 				6C00755B1D05118200FD5DC7 /* font_Y.jpg in Resources */,
 				6C00753F1D0505BF00FD5DC7 /* font_4.jpg in Resources */,
+				6CD81E7D1D065B0600A12F83 /* vin_d.png in Resources */,
 				6C0075701D0515DC00FD5DC7 /* font_J.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

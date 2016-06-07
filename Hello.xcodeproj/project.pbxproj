@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C0075351D0502FA00FD5DC7 /* font.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075341D0502FA00FD5DC7 /* font.jpg */; };
 		6C0075371D05046600FD5DC7 /* font_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075361D05046600FD5DC7 /* font_0.jpg */; };
 		6C0075391D0504DC00FD5DC7 /* font_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075381D0504DC00FD5DC7 /* font_2.jpg */; };
 		6C00753B1D05052B00FD5DC7 /* font_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C00753A1D05052B00FD5DC7 /* font_1.jpg */; };
@@ -18,7 +17,6 @@
 		6C0075451D05073900FD5DC7 /* font_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075441D05073900FD5DC7 /* font_7.jpg */; };
 		6C0075471D05084D00FD5DC7 /* font_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075461D05084D00FD5DC7 /* font_8.jpg */; };
 		6C0075491D0508CC00FD5DC7 /* font_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075481D0508CC00FD5DC7 /* font_9.jpg */; };
-		6C00754D1D05090E00FD5DC7 /* font_.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C00754C1D05090E00FD5DC7 /* font_.jpg */; };
 		6C00754F1D05099A00FD5DC7 /* font_Q.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C00754E1D05099A00FD5DC7 /* font_Q.jpg */; };
 		6C0075511D050C0100FD5DC7 /* font_W.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075501D050C0100FD5DC7 /* font_W.jpg */; };
 		6C0075531D050C8900FD5DC7 /* font_E.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075521D050C8900FD5DC7 /* font_E.jpg */; };
@@ -45,13 +43,13 @@
 		6C00757F1D05199700FD5DC7 /* font_M.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C00757B1D05199700FD5DC7 /* font_M.jpg */; };
 		6C0075801D05199700FD5DC7 /* font_N.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C00757C1D05199700FD5DC7 /* font_N.jpg */; };
 		6C0075811D05199700FD5DC7 /* font_V.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C00757D1D05199700FD5DC7 /* font_V.jpg */; };
-		6C0075851D0544FA00FD5DC7 /* font.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C0075841D0544FA00FD5DC7 /* font.json */; };
-		6C0075881D05460200FD5DC7 /* Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0075871D05460200FD5DC7 /* Font.m */; };
 		6C5405A71CFD7375005CCD66 /* CharacterRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C5405A61CFD7375005CCD66 /* CharacterRecognizer.mm */; };
 		6C5406C21CFEAE0C005CCD66 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C5406C11CFEAE0C005CCD66 /* libjpeg.a */; };
 		6C5406EA1CFEB50D005CCD66 /* vin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5406E91CFEB50D005CCD66 /* vin.png */; };
 		6C5406F81CFEB8EA005CCD66 /* pHash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C5406F61CFEB8EA005CCD66 /* pHash.cpp */; };
 		6C5407031CFFD482005CCD66 /* GraphicsProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5407021CFFD482005CCD66 /* GraphicsProcessor.m */; };
+		6CD81E781D064ECE00A12F83 /* samplebook.json in Resources */ = {isa = PBXBuildFile; fileRef = 6CD81E771D064ECE00A12F83 /* samplebook.json */; };
+		6CD81E7B1D064F1700A12F83 /* SampleBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD81E7A1D064F1700A12F83 /* SampleBook.m */; };
 		6CFCEA151CF54D9D00CC08A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA141CF54D9D00CC08A7 /* main.m */; };
 		6CFCEA181CF54D9D00CC08A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA171CF54D9D00CC08A7 /* AppDelegate.m */; };
 		6CFCEA1B1CF54D9D00CC08A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCEA1A1CF54D9D00CC08A7 /* ViewController.m */; };
@@ -61,7 +59,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6C0075341D0502FA00FD5DC7 /* font.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font.jpg; sourceTree = "<group>"; };
 		6C0075361D05046600FD5DC7 /* font_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_0.jpg; sourceTree = "<group>"; };
 		6C0075381D0504DC00FD5DC7 /* font_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_2.jpg; sourceTree = "<group>"; };
 		6C00753A1D05052B00FD5DC7 /* font_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_1.jpg; sourceTree = "<group>"; };
@@ -72,7 +69,6 @@
 		6C0075441D05073900FD5DC7 /* font_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_7.jpg; sourceTree = "<group>"; };
 		6C0075461D05084D00FD5DC7 /* font_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_8.jpg; sourceTree = "<group>"; };
 		6C0075481D0508CC00FD5DC7 /* font_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_9.jpg; sourceTree = "<group>"; };
-		6C00754C1D05090E00FD5DC7 /* font_.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_.jpg; sourceTree = "<group>"; };
 		6C00754E1D05099A00FD5DC7 /* font_Q.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_Q.jpg; sourceTree = "<group>"; };
 		6C0075501D050C0100FD5DC7 /* font_W.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_W.jpg; sourceTree = "<group>"; };
 		6C0075521D050C8900FD5DC7 /* font_E.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_E.jpg; sourceTree = "<group>"; };
@@ -99,9 +95,6 @@
 		6C00757B1D05199700FD5DC7 /* font_M.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_M.jpg; sourceTree = "<group>"; };
 		6C00757C1D05199700FD5DC7 /* font_N.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_N.jpg; sourceTree = "<group>"; };
 		6C00757D1D05199700FD5DC7 /* font_V.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font_V.jpg; sourceTree = "<group>"; };
-		6C0075841D0544FA00FD5DC7 /* font.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = font.json; sourceTree = "<group>"; };
-		6C0075861D05460200FD5DC7 /* Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Font.h; sourceTree = "<group>"; };
-		6C0075871D05460200FD5DC7 /* Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Font.m; sourceTree = "<group>"; };
 		6C5405A51CFD7375005CCD66 /* CharacterRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterRecognizer.h; sourceTree = "<group>"; };
 		6C5405A61CFD7375005CCD66 /* CharacterRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CharacterRecognizer.mm; sourceTree = "<group>"; };
 		6C5406BD1CFEAE0C005CCD66 /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
@@ -117,6 +110,9 @@
 		6C5406FA1CFEB8F0005CCD66 /* CImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CImg.h; sourceTree = "<group>"; };
 		6C5407011CFFD482005CCD66 /* GraphicsProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsProcessor.h; sourceTree = "<group>"; };
 		6C5407021CFFD482005CCD66 /* GraphicsProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicsProcessor.m; sourceTree = "<group>"; };
+		6CD81E771D064ECE00A12F83 /* samplebook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = samplebook.json; sourceTree = "<group>"; };
+		6CD81E791D064F1700A12F83 /* SampleBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleBook.h; sourceTree = "<group>"; };
+		6CD81E7A1D064F1700A12F83 /* SampleBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleBook.m; sourceTree = "<group>"; };
 		6CFCEA101CF54D9D00CC08A7 /* Hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFCEA141CF54D9D00CC08A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CFCEA161CF54D9D00CC08A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -157,8 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				6C5406E91CFEB50D005CCD66 /* vin.png */,
-				6C0075341D0502FA00FD5DC7 /* font.jpg */,
-				6C00754C1D05090E00FD5DC7 /* font_.jpg */,
 				6C0075361D05046600FD5DC7 /* font_0.jpg */,
 				6C00753A1D05052B00FD5DC7 /* font_1.jpg */,
 				6C0075381D0504DC00FD5DC7 /* font_2.jpg */,
@@ -249,9 +243,9 @@
 				6C5407021CFFD482005CCD66 /* GraphicsProcessor.m */,
 				6C5405A51CFD7375005CCD66 /* CharacterRecognizer.h */,
 				6C5405A61CFD7375005CCD66 /* CharacterRecognizer.mm */,
-				6C0075861D05460200FD5DC7 /* Font.h */,
-				6C0075871D05460200FD5DC7 /* Font.m */,
-				6C0075841D0544FA00FD5DC7 /* font.json */,
+				6CD81E791D064F1700A12F83 /* SampleBook.h */,
+				6CD81E7A1D064F1700A12F83 /* SampleBook.m */,
+				6CD81E771D064ECE00A12F83 /* samplebook.json */,
 				6CFCEA1C1CF54D9D00CC08A7 /* Main.storyboard */,
 				6CFCEA1F1CF54D9D00CC08A7 /* Assets.xcassets */,
 				6CFCEA211CF54D9D00CC08A7 /* LaunchScreen.storyboard */,
@@ -339,12 +333,10 @@
 				6C0075611D05145700FD5DC7 /* font_P.jpg in Resources */,
 				6C0075531D050C8900FD5DC7 /* font_E.jpg in Resources */,
 				6C00756A1D05151300FD5DC7 /* font_F.jpg in Resources */,
-				6C00754D1D05090E00FD5DC7 /* font_.jpg in Resources */,
 				6C00757E1D05199700FD5DC7 /* font_B.jpg in Resources */,
 				6CFCEA231CF54D9D00CC08A7 /* LaunchScreen.storyboard in Resources */,
 				6C0075661D05146300FD5DC7 /* font_D.jpg in Resources */,
 				6C0075561D05110200FD5DC7 /* font_R.jpg in Resources */,
-				6C0075851D0544FA00FD5DC7 /* font.json in Resources */,
 				6C00755A1D05118200FD5DC7 /* font_U.jpg in Resources */,
 				6C0075391D0504DC00FD5DC7 /* font_2.jpg in Resources */,
 				6C0075371D05046600FD5DC7 /* font_0.jpg in Resources */,
@@ -353,8 +345,8 @@
 				6C0075411D05060500FD5DC7 /* font_5.jpg in Resources */,
 				6C0075651D05146300FD5DC7 /* font_A.jpg in Resources */,
 				6C0075771D0517FF00FD5DC7 /* font_C.jpg in Resources */,
-				6C0075351D0502FA00FD5DC7 /* font.jpg in Resources */,
 				6C0075801D05199700FD5DC7 /* font_N.jpg in Resources */,
+				6CD81E781D064ECE00A12F83 /* samplebook.json in Resources */,
 				6C0075791D05180A00FD5DC7 /* font_X.jpg in Resources */,
 				6C0075731D05160C00FD5DC7 /* font_L.jpg in Resources */,
 				6C0075751D0517C600FD5DC7 /* font_Z.jpg in Resources */,
@@ -382,9 +374,9 @@
 				6C5406F81CFEB8EA005CCD66 /* pHash.cpp in Sources */,
 				6CFCEA1B1CF54D9D00CC08A7 /* ViewController.m in Sources */,
 				6C5405A71CFD7375005CCD66 /* CharacterRecognizer.mm in Sources */,
+				6CD81E7B1D064F1700A12F83 /* SampleBook.m in Sources */,
 				6CFCEA181CF54D9D00CC08A7 /* AppDelegate.m in Sources */,
 				6CFCEA151CF54D9D00CC08A7 /* main.m in Sources */,
-				6C0075881D05460200FD5DC7 /* Font.m in Sources */,
 				6C5407031CFFD482005CCD66 /* GraphicsProcessor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

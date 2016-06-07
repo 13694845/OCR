@@ -17,15 +17,6 @@
 #define A(x) ( Mask8(x >> 24) )
 #define RGBAMake(r, g, b, a) ( Mask8(r) | Mask8(g) << 8 | Mask8(b) << 16 | Mask8(a) << 24 )
 
-+ (instancetype)sharedProcessor {
-    static GraphicsProcessor *sharedProcessor = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedProcessor = [[self alloc] init];
-    });
-    return sharedProcessor;
-}
-
 - (void)logImage:(UIImage *)image {
     CGImageRef inputCGImage = [image CGImage];
     NSUInteger width = CGImageGetWidth(inputCGImage);

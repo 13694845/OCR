@@ -10,8 +10,6 @@
 
 @interface GraphicsProcessor : NSObject
 
-+ (instancetype)sharedProcessor;
-
 - (void)logImage:(UIImage *)image;
 - (UIImage *)grayImage:(UIImage *)image;
 - (UIImage *)binaryImage:(UIImage *)image;

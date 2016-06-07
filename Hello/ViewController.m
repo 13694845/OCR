@@ -10,12 +10,9 @@
 #import "GraphicsProcessor.h"
 #import "CharacterRecognizer.h"
 
-#import "SampleBook.h"
-
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UIImageView *bwImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *font1ImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *binaryImageView;
 
 @end
 
@@ -24,130 +21,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    CharacterRecognizer *recognizer = [[CharacterRecognizer alloc] init];
-    [recognizer characterForImage:nil];
-    
-    /*
-    UIImage *image = [UIImage imageNamed:@"font.jpg"];
-    
-    UIImage *grayImage = [[GraphicsProcessor sharedProcessor] grayImage:image];
-    
-    UIImage *binaryImage = [[GraphicsProcessor sharedProcessor] binaryImage:grayImage];
-    
-    NSData *imageData = UIImageJPEGRepresentation(binaryImage, 1.0);
-    NSString *temporaryDirectory = NSTemporaryDirectory();
-    NSString *imagePath = [temporaryDirectory stringByAppendingString:@"binary.jpg"];
-    [imageData writeToFile:imagePath atomically:YES];
-    NSLog(@"binary.jpg : %@", imagePath);
-     */
-    
-    /*
-    NSString *p = [[NSBundle mainBundle] pathForResource:@"font" ofType:@"json"];
-    NSData *d = [NSData dataWithContentsOfFile:p];
-    
-    NSDictionary *dcit = [NSJSONSerialization JSONObjectWithData:d options:NSJSONReadingMutableLeaves error:nil];
-     */
-    
-    // NSArray *characters = [Font sharedFont].allCharacters;
-    
-    
-    
     UIImage *image = [UIImage imageNamed:@"vin"];
     
-    UIImage *grayImage = [[GraphicsProcessor sharedProcessor] grayImage:image];
+    GraphicsProcessor *graphicsProcessor = [[GraphicsProcessor alloc] init];
+    UIImage *grayImage = [graphicsProcessor grayImage:image];
+    UIImage *binaryImage = [graphicsProcessor binaryImage:grayImage];
+    self.binaryImageView.image = binaryImage;
     
-    UIImage *binaryImage = [[GraphicsProcessor sharedProcessor] binaryImage:grayImage];
-    self.bwImageView.image = binaryImage;
-    // [[GraphicsProcessor sharedProcessor] logImage:binaryImage];
-    // self.font1ImageView.image = [UIImage imageNamed:@"font_0.jpg"];
-    
-    // slices.count
-    NSArray *slices = [[GraphicsProcessor sharedProcessor] divideImage:binaryImage];
-    CGFloat space = 30.0;
+    CharacterRecognizer *characterRecognizer = [[CharacterRecognizer alloc] init];
+    NSArray *slices = [graphicsProcessor divideImage:binaryImage];
     for (int i = 0; i < slices.count; i++) {
-        CGFloat xOffset = space * i;
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20.0 + xOffset, 100.0, 25.0, 25.0)];
-        imageView.contentMode = UIViewContentModeScaleAspectFit;
-        imageView.backgroundColor = [UIColor lightGrayColor];
-        imageView.image = slices[i];
-        [self.view addSubview:imageView];
-        
-//        NSString *fontPath = [[NSBundle mainBundle] pathForResource:@"font_M.jpg" ofType:nil];
-
         NSData *imageData = UIImageJPEGRepresentation(slices[i], 1.0);
         NSString *temporaryDirectory = NSTemporaryDirectory();
         NSString *imagePath = [temporaryDirectory stringByAppendingString:@"slice.jpg"];
         [imageData writeToFile:imagePath atomically:YES];
-  //      NSLog(@"imagePath : %@", imagePath);
         
-        CharacterRecognizer *recognizer = [[CharacterRecognizer alloc] init];
-        
-        /*
-        NSArray *characters = [[SampleBook sharedBook] allSamples];
-        
-        NSString *res = @"?";
-        
-        int min = 99;
-        
-        self.font1ImageView.image = [UIImage imageNamed:@"font_W.jpg"];
-        
-        
-        
-        
-        
-        for (NSDictionary *character in characters) {
- //           NSLog(@"sample : %@", character[@"sample"]);
-            
-            NSString *fontPath = [[NSBundle mainBundle] pathForResource:character[@"image"] ofType:nil];
-
-            int result = [recognizer distanceBetweenImage:imagePath andImage:fontPath];
-            
-  //          NSLog(@"similarityOfImage : %@ --- %d", character[@"character"], result);
-            
-            if (result < min) {
-                min = result;
-                res = character[@"character"];
-            }
-
-        }
-        */
-        
-        NSString *res =  [recognizer characterForImage:imagePath];
-
- 
-        
-        NSLog(@"******************************** %@", res);
-        
-        
-     //   int result = [recognizer similarityOfImage:imagePath andImage:fontPath];
-        
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20.0 + xOffset, 130.0, 25.0, 25.0)];
-        label.text = res;
-        [self.view addSubview:label];
+        NSString *character = [characterRecognizer characterForImage:imagePath];
+        NSLog(@"character : %@", character);
     }
-    
-    /*
-    self.slice1ImageView.backgroundColor = [UIColor lightGrayColor];
-    self.slice1ImageView.image = slices[11];
-    self.slice2ImageView.backgroundColor = [UIColor lightGrayColor];
-    self.slice2ImageView.image = slices[1];
-    self.slice3ImageView.backgroundColor = [UIColor lightGrayColor];
-    self.slice3ImageView.image = slices[2];
-    
-    NSData *imageData = UIImageJPEGRepresentation(slices[11], 1.0);
-    NSString *temporaryDirectory = NSTemporaryDirectory();
-    NSString *imagePath = [temporaryDirectory stringByAppendingString:@"slice.jpg"];
-    [imageData writeToFile:imagePath atomically:YES];
-    
-    self.font1ImageView.image = [UIImage imageNamed:@"font.jpg"];
-    
-    Test *test = [[Test alloc] init];
-    NSString *fontPath = [[NSBundle mainBundle] pathForResource:@"font.jpg" ofType:nil];
-    
-    int result1 = [test similarityOfImage:imagePath andImage:fontPath];
-    self.result1Label.text = [NSString stringWithFormat:@"%d", result1];
-     */
 }
 
 - (void)didReceiveMemoryWarning {

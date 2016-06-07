@@ -26,7 +26,7 @@
 
 - (NSString *)characterForImage:(NSString *)image {
     NSString *character = @"?";
-    int nearest = 100;
+    int nearest = 26;
     for (NSDictionary *sample in [[SampleBook sharedBook] allSamples]) {
         int distance = [self distanceBetweenImage:image andImage:[[NSBundle mainBundle] pathForResource:sample[@"image"] ofType:nil]];
         if (distance < nearest) {

@@ -11,7 +11,6 @@
 @interface CharacterRecognizer : NSObject
 
 - (int)distanceBetweenImage:(NSString *)imageA andImage:(NSString *)imageB;
-
 - (NSString *)characterForImage:(NSString *)image;
 
 @end

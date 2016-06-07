@@ -10,7 +10,7 @@
 #import "GraphicsProcessor.h"
 #import "CharacterRecognizer.h"
 
-#import "Font.h"
+#import "SampleBook.h"
 
 @interface ViewController ()
 
@@ -24,6 +24,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    CharacterRecognizer *recognizer = [[CharacterRecognizer alloc] init];
+    [recognizer characterForImage:nil];
+    
     /*
     UIImage *image = [UIImage imageNamed:@"font.jpg"];
     
@@ -79,8 +83,8 @@
         
         CharacterRecognizer *recognizer = [[CharacterRecognizer alloc] init];
         
-        
-        NSArray *characters = [Font sharedFont].allCharacters;
+        /*
+        NSArray *characters = [[SampleBook sharedBook] allSamples];
         
         NSString *res = @"?";
         
@@ -88,12 +92,16 @@
         
         self.font1ImageView.image = [UIImage imageNamed:@"font_W.jpg"];
         
+        
+        
+        
+        
         for (NSDictionary *character in characters) {
  //           NSLog(@"sample : %@", character[@"sample"]);
             
-            NSString *fontPath = [[NSBundle mainBundle] pathForResource:character[@"sample"] ofType:nil];
+            NSString *fontPath = [[NSBundle mainBundle] pathForResource:character[@"image"] ofType:nil];
 
-            int result = [recognizer similarityOfImage:imagePath andImage:fontPath];
+            int result = [recognizer distanceBetweenImage:imagePath andImage:fontPath];
             
   //          NSLog(@"similarityOfImage : %@ --- %d", character[@"character"], result);
             
@@ -103,6 +111,11 @@
             }
 
         }
+        */
+        
+        NSString *res =  [recognizer characterForImage:imagePath];
+
+ 
         
         NSLog(@"******************************** %@", res);
         

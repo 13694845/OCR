@@ -126,28 +126,36 @@
     int flag = 0;
     for (NSUInteger i = 0; i < width; i++) {
         if (shadow[i] == 0 && flag == 1) {
-            // printf(" > ");
+//            printf(" > ");
             flag = 0;
             
             right = i;
-            // printf(" { %d, %d } ", left, right);
+//            printf(" { %d, %d } ", left, right);
+
+            // ****************************
+            if ((right - left) < 2) continue;
+            // ****************************
+            
             UIImage *slice = [self sliceImage:image inRect:CGRectMake(left, 0, right - left, height)];
             [slices addObject:slice];
         }
         if (shadow[i] != 0 && flag == 0) {
-            // printf(" < ");
+//            printf(" < ");
             flag = 1;
             
             left = i;
         }
-        // printf("%d ", shadow[i]);
+//        printf("%d ", shadow[i]);
     }
     
-    [self trimImage:slices[0]];
+//    NSLog(@"count : %d", slices.count);
+
     for (NSUInteger i = 0; i < slices.count; i++) {
         UIImage *slice = slices[i];
+        NSLog(@"i : %d / %d", i, slices.count);
         slices[i] = [self trimImage:slice];
     }
+
     return slices;
 }
 
@@ -194,20 +202,33 @@
     int flag = 0;
     for (NSUInteger j = 0; j < height; j++) {
         if (shadow[j] == 0 && flag == 1) {
-            // printf(" > ");
+            printf(" > ");
             flag = 0;
             
             bottom = j;
-            // printf(" { %d, %d } ", top, bottom);
+            printf(" { %d, %d } ", top, bottom);
+            
             slice = [self sliceImage:image inRect:CGRectMake(0, top, width, bottom - top)];
         }
+        
+        
+        // ***************************
+        if (j == height - 1 && flag == 1) {
+            printf(" > ");
+            flag = 0;
+            bottom = j;
+            slice = [self sliceImage:image inRect:CGRectMake(0, top, width, bottom - top)];
+        }
+        // ***************************
+        
+        
         if (shadow[j] != 0 && flag == 0) {
-            // printf(" < ");
+            printf(" < ");
             flag = 1;
             
             top = j;
         }
-        // printf("%d ", shadow[j]);
+        printf("%d ", shadow[j]);
     }
     // NSLog(@"%f", slice.size.height);
     return slice;

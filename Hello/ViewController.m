@@ -13,6 +13,7 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *binaryImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *sampleImageView;
 
 @end
 
@@ -21,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    UIImage *image = [UIImage imageNamed:@"vin"];
+    UIImage *image = [UIImage imageNamed:@"vin_d"];
     
     GraphicsProcessor *graphicsProcessor = [[GraphicsProcessor alloc] init];
     UIImage *grayImage = [graphicsProcessor grayImage:image];
@@ -40,8 +41,7 @@
         [imageData writeToFile:imagePath atomically:YES];
         
         NSString *character = [characterRecognizer characterForImage:imagePath];
-        // NSLog(@"character : %@", character);
-        printf(" %c ", [character characterAtIndex:0]);
+        NSLog(@"character : %@", character);
     }
 }
 

@@ -32,6 +32,13 @@
         if (distance < nearest) {
             nearest = distance;
             character = sample[@"character"];
+            
+            
+            // ***********************
+            character = [NSString stringWithFormat:@"%@[%d]", character, distance];
+            // ***********************
+                         
+            
         }
     }
     return character;

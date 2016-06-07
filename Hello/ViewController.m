@@ -37,7 +37,8 @@
         [imageData writeToFile:imagePath atomically:YES];
         
         NSString *character = [characterRecognizer characterForImage:imagePath];
-        NSLog(@"character : %@", character);
+        // NSLog(@"character : %@", character);
+        printf(" %c ", [character characterAtIndex:0]);
     }
 }
 

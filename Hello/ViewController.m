@@ -13,7 +13,6 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *binaryImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *sampleImageView;
 
 @end
 
@@ -34,6 +33,7 @@
     GraphicsProcessor *graphicsProcessor = [[GraphicsProcessor alloc] init];
     CharacterRecognizer *characterRecognizer = [[CharacterRecognizer alloc] init];
     NSArray *slices = [graphicsProcessor divideImage:self.binaryImageView.image];
+    
     for (int i = 0; i < slices.count; i++) {
         NSData *imageData = UIImageJPEGRepresentation(slices[i], 1.0);
         NSString *temporaryDirectory = NSTemporaryDirectory();
